@@ -7320,6 +7320,7 @@ html[dir="rtl"] .creative-inspiration-badge {
 .customer-review-card blockquote {
 
     margin: 0;
+    margin-bottom: 22px;
 
     color: var(--text-color);
 
@@ -10520,7 +10521,7 @@ html[dir="rtl"] .picked-product-price a:hover i {
 
 .value-panel {
 
-    min-height: 430px;
+    min-height: 390px;
 
     display: flex;
 
@@ -10585,7 +10586,7 @@ html[dir="rtl"] .picked-product-price a:hover i {
 
     justify-content: space-between;
 
-    margin-bottom: auto;
+    margin-bottom: 24px;
 
 }
 
@@ -10648,7 +10649,7 @@ html[dir="rtl"] .picked-product-price a:hover i {
 
 .value-panel-content {
 
-    margin-top: 70px;
+    margin-top: 0;
 
 }
 
@@ -16292,7 +16293,7 @@ html[dir="rtl"] .school-product-bottom {
 
     color: transparent;
 
-    border: 1px solid var(--border-color);
+    border: 1px solid var(--primary-color);
 
     transition:
         color 0.3s ease,
@@ -27989,12 +27990,18 @@ body.dark-mode .shop-view-all {
 
     color: #D6B98C;
 
+    border-color: #D6B98C;
+
 }
 
 
 body.dark-mode .shop-view-all:hover {
 
     color: #F5F1E8;
+
+    background-color: #D6B98C;
+
+    border-color: #D6B98C;
 
 }
 
@@ -29151,7 +29158,7 @@ body.dark-mode .school-kit-price {
 body.dark-mode .school-kit-check {
     color: var(--text-light) !important;
     background-color: transparent !important;
-    border-color: var(--border-color) !important;
+    border-color: rgba(255, 255, 255, 0.55) !important;
 }
 
 body.dark-mode .school-kit-product.selected .school-kit-check,
@@ -29743,7 +29750,7 @@ body.dark-mode .school-kit-check {
 
     background-color: transparent !important;
 
-    border: 1px solid #465048 !important;
+    border: 1px solid rgba(255, 255, 255, 0.55) !important;
 
 }
 
@@ -29796,7 +29803,7 @@ body.dark-mode .school-kit-product input:not(:checked)+.school-kit-check {
 
     background-color: transparent !important;
 
-    border-color: #465048 !important;
+    border-color: rgba(255, 255, 255, 0.55) !important;
 
 }
 
@@ -33116,7 +33123,7 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
     }
 
     .stories-testimonial {
-        padding: 35px 25px;
+        padding: 48px 36px 42px;
     }
 
     .stories-quote-mark {
@@ -33127,11 +33134,11 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
 
     .stories-testimonial blockquote {
         font-size: 23px;
-        line-height: 1.35;
+        line-height: 1.48;
     }
 
     .stories-author {
-        margin-top: 28px;
+        margin-top: 32px;
     }
 
     .stories-avatar {
@@ -33148,7 +33155,7 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
     }
 
     .stories-rating {
-        margin-top: 22px;
+        margin-top: 28px;
     }
 
     .stories-mini-grid {
@@ -36389,11 +36396,17 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
 
     .shop-art-floating-card {
         width: 165px;
-        padding: 16px;
+        padding: 16px 42px 16px 16px;
     }
 
     .shop-art-floating-card strong {
         font-size: 18px;
+    }
+
+    .shop-art-floating-card>i {
+        right: 14px;
+        bottom: 14px;
+        font-size: 24px;
     }
 
     .shop-offer-image {
@@ -36444,11 +36457,17 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
 
     .shop-art-floating-card {
         width: 150px;
-        padding: 14px;
+        padding: 14px 38px 14px 14px;
     }
 
     .shop-art-floating-card strong {
         font-size: 17px;
+    }
+
+    .shop-art-floating-card>i {
+        right: 12px;
+        bottom: 12px;
+        font-size: 22px;
     }
 
     .shop-offer-image {
