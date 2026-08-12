@@ -1013,6 +1013,207 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
+
+// =========================================================
+// SUPPORTING TEXT SIZE BOOST
+// =========================================================
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    const supportTextSelectors = [
+        ".category-content > span",
+        ".category-link",
+        ".product-badge",
+        ".product-category",
+        ".product-price strong",
+        ".product-price del",
+        ".view-all-products",
+        ".school-bundle-price-card span",
+        ".school-bundle-price-card strong",
+        ".school-bundle-price-card small",
+        ".school-bundle-badge span",
+        ".school-bundle-badge strong",
+        ".bulk-card-label",
+        ".bulk-category-list span",
+        ".bulk-categories > span",
+        ".creative-inspiration-badge span",
+        ".creative-inspiration-badge strong",
+        ".bulk-showcase-cta strong",
+        ".bulk-showcase-cta span",
+        ".bulk-showcase-cta > a",
+        ".bulk-card-footer strong",
+        ".bulk-card-footer a",
+        ".arrival-badge",
+        ".desk-hotspot-info small",
+        ".desk-hotspot-info strong",
+        ".desk-hotspot-info span",
+        ".picked-product-price strong",
+        ".picked-product-price a",
+        ".create-number",
+        ".create-main > span",
+        ".desk-link",
+        ".desk-stat span",
+        ".shop-product-badge",
+        ".shop-product-category",
+        ".shop-product-meta strong",
+        ".shop-product-meta a",
+        ".shop-stationery-categories small",
+        ".shop-art-categories small",
+        ".shop-offer-category",
+        ".shop-offer-price strong",
+        ".shop-offer-price del",
+        ".shop-offer-price span",
+        ".creative-cta-label",
+        ".creative-cta-label span",
+        ".creative-cta-button",
+        ".school-needs-feature-content span",
+        ".school-needs-feature-content a",
+        ".school-product-badge",
+        ".school-product-category",
+        ".school-product-bottom strong",
+        ".school-product-bottom span",
+        ".school-kit-product-info small",
+        ".school-kit-price",
+        ".school-enquiry-highlights small",
+        ".school-enquiry-upload label small",
+        ".contact-info-content small",
+        ".auth-divider small",
+        ".school-filter-label",
+        ".school-filter-field label",
+        ".school-filter-head > p",
+        ".school-filter-empty p",
+        ".school-kit-category",
+        ".bulk-showcase-description",
+        ".bulk-category-intro",
+        ".bulk-card-featured > p",
+        ".bulk-showcase-card > p",
+        ".creative-inspiration-panel p",
+        ".trust-description",
+        ".bulk-showcase-cta > div",
+        ".home-two-hero-content > p",
+        ".home-two-hero-detail p",
+        ".edit-description",
+        ".create-description p",
+        ".picked-heading > p",
+        ".picked-product-info p",
+        ".value-heading p",
+        ".value-panel-content p",
+        ".stories-intro > p",
+        ".stories-mini p",
+        ".final-cta-content > p",
+        ".final-cta-secondary",
+        ".about-story-content p",
+        ".about-vm-block p",
+        ".about-vm-block small",
+        ".about-journey-heading p",
+        ".about-journey-content p",
+        ".about-numbers-heading > p",
+        ".about-number-item p",
+        ".about-team-heading > p",
+        ".about-beliefs-intro > p",
+        ".about-belief-text p",
+        ".about-final-content > p",
+        ".shop-hero-content p",
+        ".shop-stationery-content > p",
+        ".shop-art-content > p",
+        ".shop-offers-heading > p",
+        ".shop-offer-content p",
+        ".school-needs-heading p",
+        ".school-filter-head > p",
+        ".school-filter-empty p",
+        ".school-filter-tags button",
+        ".school-kit-heading p",
+        ".school-bulk-content > p",
+        ".school-enquiry-intro > p",
+        ".school-enquiry-response p",
+        ".contact-message-content > p",
+        ".contact-location-content > p",
+        ".auth-heading p",
+        ".auth-divider small",
+        ".bulk-intro p",
+        ".bulk-benefit p",
+        ".bulk-form-heading p"
+    ];
+
+    let supportTextResizeTimer;
+
+    function bumpSupportTextSizes() {
+
+        const seen = new Set();
+
+        document.querySelectorAll(
+            supportTextSelectors.join(", ")
+        ).forEach((element) => {
+
+            if (seen.has(element)) return;
+            seen.add(element);
+
+            element.style.fontSize = "";
+
+            const computedSize =
+                window.getComputedStyle(element).fontSize;
+
+            const baseSize = parseFloat(computedSize);
+
+            if (!Number.isNaN(baseSize)) {
+
+                element.style.fontSize =
+                    `${baseSize + 2}px`;
+
+            }
+
+        });
+
+    }
+
+
+    function bumpHomeTwoPickedPriceSizes() {
+
+        document
+            .querySelectorAll(
+                ".home-two-picked .picked-product-price strong, .home-two-picked .picked-product-price a"
+            )
+            .forEach((element) => {
+
+                element.style.fontSize = "";
+
+                const computedSize =
+                    window.getComputedStyle(element).fontSize;
+
+                const baseSize = parseFloat(computedSize);
+
+                if (!Number.isNaN(baseSize)) {
+
+                    element.style.fontSize =
+                        `${baseSize + 2}px`;
+
+                }
+
+            });
+
+    }
+
+
+    bumpSupportTextSizes();
+    bumpHomeTwoPickedPriceSizes();
+
+
+    window.addEventListener("resize", () => {
+
+        window.clearTimeout(supportTextResizeTimer);
+
+        supportTextResizeTimer = window.setTimeout(
+            () => {
+                bumpSupportTextSizes();
+                bumpHomeTwoPickedPriceSizes();
+            },
+            100
+        );
+
+    });
+
+});
+
 // =========================================================
 // SCHOOL DEALS — ADVANCED PRODUCT FILTER
 // =========================================================
