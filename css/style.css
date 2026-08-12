@@ -32600,13 +32600,15 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
     .home-two-hero-bottom {
         width: 100%;
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 12px;
-        margin-top: 42px;
+        grid-template-columns: 1fr;
+        gap: 10px;
+        max-width: 210px;
+        margin: 42px auto 0;
     }
 
     .home-two-hero-detail {
         gap: 7px;
+        justify-content: flex-start;
     }
 
     .home-two-hero-detail span {
@@ -38485,4 +38487,194 @@ html[dir="rtl"] .auth-toggle-btn i {
 
     font-size: 18px !important;
 
+}
+
+/* =========================================================
+   SCHOOL DEALS — iPAD BUTTON FIX
+   iPad Mini + iPad Pro
+========================================================= */
+
+@media (min-width: 768px) and (max-width: 1199px) {
+
+    .school-filter-product {
+        display: flex !important;
+        flex-direction: column !important;
+        min-width: 0 !important;
+        width: 100% !important;
+        overflow: hidden !important;
+    }
+
+    .school-product-image {
+        flex: 0 0 auto !important;
+    }
+
+    .school-product-content {
+        display: flex !important;
+        flex: 1 1 auto !important;
+        flex-direction: column !important;
+        min-width: 0 !important;
+        box-sizing: border-box !important;
+    }
+
+    .school-product-bottom {
+        margin-top: auto !important;
+        width: 100% !important;
+        min-width: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        justify-content: flex-start !important;
+        gap: 8px !important;
+        flex-wrap: nowrap !important;
+        box-sizing: border-box !important;
+    }
+
+    .school-product-bottom>div {
+        flex: 0 0 auto !important;
+        min-width: 0 !important;
+    }
+
+    .school-product-add {
+        margin-left: 0 !important;
+        flex: 0 0 auto !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        box-sizing: border-box !important;
+        align-self: stretch !important;
+        white-space: nowrap !important;
+        line-height: 1 !important;
+        visibility: visible !important;
+        opacity: 1 !important;
+        overflow: visible !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        min-height: 38px !important;
+        height: 38px !important;
+        padding: 0 12px !important;
+        gap: 6px !important;
+    }
+
+    .school-product-add i {
+        flex-shrink: 0 !important;
+        display: inline-block !important;
+    }
+
+    html[dir="rtl"] .school-product-bottom {
+        direction: rtl !important;
+    }
+
+    html[dir="rtl"] .school-product-add {
+        flex-direction: row-reverse !important;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .school-product-bottom {
+        gap: 7px !important;
+    }
+
+    .school-product-add {
+        padding: 0 10px !important;
+        font-size: 9px !important;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+    .school-product-bottom {
+        gap: 8px !important;
+    }
+
+    .school-product-add {
+        padding: 0 12px !important;
+        font-size: 10px !important;
+    }
+}
+
+@media (max-width: 767px) {
+
+    .home-two-hero-bottom {
+        width: fit-content !important;
+        max-width: 85% !important;
+
+        margin: 38px auto 0 !important;
+        padding: 0 !important;
+
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: flex-start !important;
+
+        gap: 18px !important;
+    }
+
+    .home-two-hero-detail {
+        width: fit-content !important;
+        min-width: 190px !important;
+
+        display: grid !important;
+        grid-template-columns: 30px 1fr !important;
+
+        gap: 10px !important;
+        align-items: start !important;
+
+        margin: 0 auto !important;
+        padding: 0 !important;
+
+        text-align: left !important;
+    }
+
+    .home-two-hero-detail span {
+        width: 30px !important;
+        min-width: 30px !important;
+
+        margin: 0 !important;
+
+        text-align: left !important;
+        font-size: 10px !important;
+    }
+
+    .home-two-hero-detail p {
+        margin: 0 !important;
+        padding: 0 !important;
+
+        max-width: 150px !important;
+
+        text-align: left !important;
+        font-size: 9px !important;
+        line-height: 1.45 !important;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .shop-offers-heading,
+    .shop-offers-heading>div,
+    .shop-offers-heading h2,
+    .shop-offers-heading p {
+        text-align: left !important;
+    }
+
+    .shop-offers-heading {
+        align-items: flex-start !important;
+        justify-content: flex-start !important;
+    }
+
+    .shop-offers-heading>div {
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .shop-offers-heading h2,
+    .shop-offers-heading p {
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+
+    .shop-section-label {
+        justify-content: flex-start !important;
+        text-align: left !important;
+    }
 }
