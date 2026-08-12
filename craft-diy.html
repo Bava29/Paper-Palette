@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) { }
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <a href="index.html" class="site-logo" aria-label="Paper & Palette Home">
+
+                    <img src="images/logo.png" class="logo-default" alt="Paper & Palette">
+
+                    <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+
+                </a>
+
+
+                <!-- =================================================
+                     MAIN NAVIGATION
+                ================================================== -->
+
+                <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+
+                        <!-- =========================
+                             HOME
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Home</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="index.html">
+                                        Home 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-2.html">
+                                        Home 2
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             ABOUT US
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="about.html" class="nav-link">
+
+                                About Us
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SHOP
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger active">
+
+                                <span>Shop</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown shop-dropdown">
+
+
+                                <!-- Writing Supplies -->
+
+                                <li>
+                                    <a href="writing-supplies.html">
+
+                                        Writing Supplies
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Notebooks -->
+
+                                <li>
+                                    <a href="notebooks-sketchbooks.html">
+
+                                        Notebooks &amp; Sketchbooks
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Art & Painting -->
+
+                                <li>
+                                    <a href="art-painting.html">
+
+                                        Art &amp; Painting
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Craft & DIY -->
+
+                                <li>
+                                    <a href="craft-diy.html" class="active">
+
+                                        Craft &amp; DIY
+
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SCHOOL DEALS
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="school-deals.html" class="nav-link">
+
+                                School Deals
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             CONTACT
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- =================================================
+                         MOBILE MENU ACTIONS
+                         These appear only inside hamburger menu
+                    ================================================== -->
+
+                    <div class="mobile-menu-actions">
+
+
+                        <!-- =========================
+                             DARK MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileThemeToggle">
+
+                            <span>
+
+                                <i class="fa-solid fa-moon action-icon"></i>
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right action-arrow"></i>
+
+                        </button>
+
+
+                        <!-- =========================
+                             RTL MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileRtlToggle">
+
+                            <span>
+                                <i class="fa-solid fa-right-left action-icon"></i>
+                            </span>
+
+                        </button>
+
+
+                        <!-- =========================
+                             LOGIN
+                        ========================== -->
+
+                        <a href="login.html" class="mobile-login-btn">
+
+                            <span>
+
+                                <i class="fa-regular fa-user action-icon"></i>
+
+                                <span>Login</span>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right action-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =========================
+                             BULK ORDERS
+                        ========================== -->
+
+                        <a href="bulk-orders.html" class="mobile-bulk-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+                </nav>
+
+
+                <!-- =================================================
+                     HEADER ACTIONS
+                     Desktop only
+                ================================================== -->
+
+                <div class="navbar-actions">
+
+
+                    <!-- Desktop Actions -->
+
+                    <div class="desktop-actions">
+
+
+                        <!-- Dark Mode -->
+
+                        <button type="button" class="nav-icon-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                            title="Dark Mode">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+
+                        <!-- RTL -->
+
+                        <button type="button" class="nav-icon-btn" id="rtlToggle" aria-label="Toggle RTL Mode"
+                            title="RTL Mode">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+
+                        <!-- Login -->
+
+                        <a href="login.html" class="login-btn">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>
+                                Login
+                            </span>
+
+                        </a>
+
+
+                        <!-- Bulk Orders -->
+
+                        <a href="bulk-orders.html" class="bulk-orders-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu"
+                        aria-expanded="false">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+     CRAFT & DIY PAGE — HERO
+====================================================== -->
+
+
+        <section class="shop-hero">
+
+
+            <div class="shop-hero-bg">
+
+
+                <img src="images/cd-hero.jpg" alt="Craft and DIY supplies collection">
+
+
+            </div>
+
+
+
+            <div class="shop-hero-overlay"></div>
+
+
+
+            <div class="container">
+
+
+
+                <div class="shop-hero-content">
+
+
+
+                    <span class="shop-hero-label">
+                        CRAFT & DIY
+                    </span>
+
+
+
+                    <h1>
+                        Make something
+                        <span>uniquely yours.</span>
+                    </h1>
+
+
+
+                    <p>
+                        Discover creative craft and DIY essentials
+                        designed for hands-on projects, thoughtful
+                        creations and endless ways to make something
+                        special.
+                    </p>
+
+
+
+                    <div class="shop-hero-buttons">
+
+
+
+                        <a href="#craft-supplies" class="shop-hero-btn shop-hero-btn-primary">
+
+
+                            Explore Craft Supplies
+
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+
+                        </a>
+
+
+
+                        <a href="#diy" class="shop-hero-btn shop-hero-btn-secondary">
+
+
+                            Discover DIY Ideas
+
+
+                        </a>
+
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Scroll Indicator -->
+
+
+            <div class="shop-hero-scroll">
+
+
+                <span>
+                    EXPLORE THE COLLECTION
+                </span>
+
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+
+            </div>
+
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+     CRAFT & DIY — FEATURED COLLECTION
+====================================================== -->
+
+
+        <section class="shop-featured-section">
+
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="shop-section-heading">
+
+
+                    <div>
+
+                        <span class="shop-section-label">
+                            CRAFT & DIY COLLECTION
+                        </span>
+
+
+                        <h2>
+                            Create more.
+                            <em>Make it yours.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <a href="#" class="shop-view-all">
+
+                        View All Craft Supplies
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- Product Grid -->
+
+                <div class="shop-featured-grid">
+
+
+                    <!-- Product 01 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                BESTSELLER
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/c1.jpg" alt="Craft paper set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                CRAFT PAPERS
+                            </span>
+
+
+                            <h3>
+                                Creative Craft Paper Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹180
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 02 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge shop-product-new">
+                                NEW
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/c2.jpg" alt="DIY craft kit">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                DIY KITS
+                            </span>
+
+
+                            <h3>
+                                Creative DIY Starter Kit
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹320
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 03 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                POPULAR
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/c3.jpg" alt="Decorative craft supplies">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                DECORATIVE CRAFT
+                            </span>
+
+
+                            <h3>
+                                Decor Craft Essentials
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹280
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 04 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                CREATIVE PICK
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/c4.jpg" alt="Craft tools set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                CRAFT TOOLS
+                            </span>
+
+
+                            <h3>
+                                All DIY Craft Tools Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹240
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================================
+     CRAFT & DIY — COLLECTION
+====================================================== -->
+
+        <section class="shop-stationery-section" id="craft-supplies">
+
+
+            <div class="container">
+
+
+                <div class="shop-stationery-layout">
+
+
+                    <!-- Left Visual -->
+
+                    <div class="shop-stationery-visual">
+
+
+                        <img src="images/craft-diy-collection.jpg" alt="Craft and DIY supplies collection">
+
+
+                        <div class="shop-stationery-visual-label">
+
+
+                            <span>
+                                CUT • CREATE • CRAFT
+                            </span>
+
+
+                            <strong>
+                                01
+                            </strong>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Right Content -->
+
+                    <div class="shop-stationery-content">
+
+
+                        <span class="shop-section-label">
+                            CRAFT & DIY
+                        </span>
+
+
+                        <h2>
+                            Make every
+                            <em>idea by hand.</em>
+                        </h2>
+
+
+                        <p>
+                            Discover creative craft and DIY essentials
+                            for handmade projects, colourful creations,
+                            decorations and imaginative activities for
+                            every creative journey.
+                        </p>
+
+
+
+                        <!-- Categories -->
+
+                        <div class="shop-stationery-categories">
+
+
+                            <!-- Category 01 -->
+
+                            <a href="craft-diy.html?category=craft-paper">
+
+
+                                <span class="shop-stationery-number">
+                                    01
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Craft Papers
+                                    </strong>
+
+                                    <small>
+                                        Coloured, patterned & creative papers
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 02 -->
+
+                            <a href="craft-diy.html?category=diy-kits">
+
+
+                                <span class="shop-stationery-number">
+                                    02
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        DIY Kits
+                                    </strong>
+
+                                    <small>
+                                        Ready-to-create project kits
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 03 -->
+
+                            <a href="craft-diy.html?category=decorative">
+
+
+                                <span class="shop-stationery-number">
+                                    03
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Decorative Supplies
+                                    </strong>
+
+                                    <small>
+                                        Ribbons, stickers & embellishments
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 04 -->
+
+                            <a href="craft-diy.html?category=tools">
+
+
+                                <span class="shop-stationery-number">
+                                    04
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Craft Tools
+                                    </strong>
+
+                                    <small>
+                                        Scissors, cutters & creative tools
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+
+                        <!-- CTA -->
+
+                        <a href="craft-diy.html" class="shop-stationery-button">
+
+
+                            Explore All Craft Supplies
+
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+        <!-- =====================================================
+     CRAFT & DIY — CREATIVE COLLECTION
+====================================================== -->
+
+        <section class="shop-art-section" id="diy">
+
+
+            <div class="container">
+
+
+                <div class="shop-art-layout">
+
+
+                    <!-- LEFT CONTENT -->
+
+                    <div class="shop-art-content">
+
+
+                        <span class="shop-section-label">
+                            CRAFT & DIY COLLECTION
+                        </span>
+
+
+                        <h2>
+                            Turn simple materials
+                            <em>into something special.</em>
+                        </h2>
+
+
+                        <p>
+                            Explore colourful craft papers, DIY kits,
+                            decorative supplies and creative tools made
+                            for hands-on projects, handmade creations
+                            and imaginative activities.
+                        </p>
+
+
+
+                        <div class="shop-art-stats">
+
+
+                            <div>
+
+                                <strong>
+                                    80+
+                                </strong>
+
+                                <span>
+                                    Creative supplies
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    04
+                                </strong>
+
+                                <span>
+                                    Craft categories
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+
+                        <a href="craft-diy.html" class="shop-art-button">
+
+                            Explore Craft Collection
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- RIGHT VISUAL -->
+
+                    <div class="shop-art-visual">
+
+
+                        <div class="shop-art-main-image">
+
+
+                            <img src="images/craft-diy-creative.jpg" alt="Craft and DIY creative collection">
+
+
+                        </div>
+
+
+
+                        <div class="shop-art-floating-card">
+
+
+                            <span>
+                                MADE TO CREATE
+                            </span>
+
+
+                            <strong>
+                                Cut.
+                                Make.
+                                Create.
+                            </strong>
+
+
+                            <i class="fa-solid fa-scissors"></i>
+
+
+                        </div>
+
+
+
+                        <div class="shop-art-number">
+                            02
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- CRAFT CATEGORY STRIP -->
+
+                <div class="shop-art-categories">
+
+
+                    <!-- 01 -->
+
+                    <a href="craft-diy.html?category=craft-paper">
+
+
+                        <span>
+                            01
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-regular fa-file"></i>
+
+                            <strong>
+                                Craft Papers
+                            </strong>
+
+                            <small>
+                                Coloured & patterned papers
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 02 -->
+
+                    <a href="craft-diy.html?category=diy-kits">
+
+
+                        <span>
+                            02
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-puzzle-piece"></i>
+
+                            <strong>
+                                DIY Kits
+                            </strong>
+
+                            <small>
+                                Ready-to-create project kits
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 03 -->
+
+                    <a href="craft-diy.html?category=decorative">
+
+
+                        <span>
+                            03
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-star"></i>
+
+                            <strong>
+                                Decorative Supplies
+                            </strong>
+
+                            <small>
+                                Ribbons, stickers & embellishments
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 04 -->
+
+                    <a href="craft-diy.html?category=tools">
+
+
+                        <span>
+                            04
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-scissors"></i>
+
+                            <strong>
+                                Craft Tools
+                            </strong>
+
+                            <small>
+                                Scissors, cutters & creative tools
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!-- =====================================================
+     CRAFT & DIY — SPECIAL OFFERS
+====================================================== -->
+
+        <section class="shop-offers-section">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="shop-offers-heading">
+
+                    <div>
+
+                        <span class="shop-section-label">
+                            CRAFT & DIY OFFERS
+                        </span>
+
+                        <h2>
+                            More creativity.
+                            <em>Better value.</em>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Discover special prices on selected craft
+                        papers, DIY kits, decorative supplies and
+                        creative tools made for hands-on projects.
+                    </p>
+
+                </div>
+
+
+                <!-- Offers -->
+
+                <div class="shop-offers-grid">
+
+
+                    <!-- Offer 01 -->
+
+                    <article class="shop-offer-card">
+
+                        <div class="shop-offer-image">
+
+                            <span class="shop-offer-discount">
+                                20% OFF
+                            </span>
+
+                            <img src="images/c1.jpg" alt="Creative craft paper set offer">
+
+                        </div>
+
+
+                        <div class="shop-offer-content">
+
+                            <span class="shop-offer-category">
+                                CRAFT PAPERS
+                            </span>
+
+                            <h3>
+                                Creative Craft Paper Set
+                            </h3>
+
+                            <p>
+                                A colourful collection of craft papers
+                                for cards, decorations, school projects
+                                and handmade creations.
+                            </p>
+
+
+                            <div class="shop-offer-price">
+
+                                <strong>
+                                    ₹240
+                                </strong>
+
+                                <del>
+                                    ₹300
+                                </del>
+
+                                <span>
+                                    Save ₹60
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+                                Shop Now
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Offer 02 -->
+
+                    <article class="shop-offer-card">
+
+                        <div class="shop-offer-image">
+
+                            <span class="shop-offer-discount">
+                                15% OFF
+                            </span>
+
+                            <img src="images/c2.jpg" alt="DIY craft kit offer">
+
+                        </div>
+
+
+                        <div class="shop-offer-content">
+
+                            <span class="shop-offer-category">
+                                DIY KITS
+                            </span>
+
+                            <h3>
+                                Creative DIY Starter Kit
+                            </h3>
+
+                            <p>
+                                Everything you need to begin simple
+                                creative projects, handmade decorations
+                                and fun DIY activities.
+                            </p>
+
+
+                            <div class="shop-offer-price">
+
+                                <strong>
+                                    ₹340
+                                </strong>
+
+                                <del>
+                                    ₹400
+                                </del>
+
+                                <span>
+                                    Save ₹60
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+                                Shop Now
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- Offer 03 -->
+
+                    <article class="shop-offer-card">
+
+                        <div class="shop-offer-image">
+
+                            <span class="shop-offer-discount">
+                                25% OFF
+                            </span>
+
+                            <img src="images/c3.jpg" alt="Decorative craft supplies offer">
+
+                        </div>
+
+
+                        <div class="shop-offer-content">
+
+                            <span class="shop-offer-category">
+                                DECORATIVE SUPPLIES
+                            </span>
+
+                            <h3>
+                                Decor Craft Essentials
+                            </h3>
+
+                            <p>
+                                Add the finishing touch with ribbons,
+                                stickers and more decorative embellishments
+                                for creative projects.
+                            </p>
+
+
+                            <div class="shop-offer-price">
+
+                                <strong>
+                                    ₹375
+                                </strong>
+
+                                <del>
+                                    ₹500
+                                </del>
+
+                                <span>
+                                    Save ₹125
+                                </span>
+
+                            </div>
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+                                Shop Now
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+
+                <!-- Bottom CTA -->
+
+                <div class="shop-offers-bottom">
+
+                    <div>
+
+                        <span>
+                            KEEP CREATING
+                        </span>
+
+                        <strong>
+                            Find everything you need for your next project.
+                        </strong>
+
+                    </div>
+
+
+                    <a href="craft-diy.html" class="shop-offers-all-button">
+
+                        View All Craft Supplies
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- =========================================
+                 BRAND
+            ========================================== -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo-dark.png" class="logo-default" alt="Paper & Palette">
+
+                        <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+                    </a>
+
+                    <p>
+                        Discover quality stationery, art supplies,
+                        creative essentials and school-ready bundles
+                        designed to inspire every idea.
+                    </p>
+
+
+                    <!-- Social Links -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Pinterest" title="Pinterest">
+
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="YouTube" title="YouTube">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                 QUICK LINKS
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="school-deals.html">
+                                School Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 SHOP
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Shop
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="writing-supplies.html">
+                                Writing Supplies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="notebooks-sketchbooks.html">
+                                Notebooks &amp; Sketchbooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="art-painting.html">
+                                Art &amp; Painting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="craft-diy.html">
+                                Craft &amp; DIY
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="bulk-orders.html">
+                                Bulk Orders
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Get In Touch
+                    </h4>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <p>
+                            24 Creative Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <a href="mailto:hello@paperandpalette.com">
+                            hello@paperandpalette.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <p>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+             FOOTER BOTTOM
+        ========================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Paper &amp; Palette.
+                    All Rights Reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

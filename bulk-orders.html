@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class="bulk-page">
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) {}
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         TOP CONTROLS
+    ====================================================== -->
+
+    <div class="bulk-topbar">
+
+
+        <!-- Logo -->
+
+        <a href="index.html" class="bulk-logo">
+
+            <img src="images/logo.png" class="bulk-logo-default" alt="Paper &amp; Palette">
+
+            <img src="images/logo-dark.png" class="bulk-logo-light" alt="Paper &amp; Palette">
+
+        </a>
+
+
+        <!-- Controls -->
+
+        <div class="bulk-actions">
+
+            <button type="button" class="bulk-toggle-btn" id="themeToggle" aria-label="Toggle Dark Mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <button type="button" class="bulk-toggle-btn" id="rtlToggle" aria-label="Toggle RTL Mode">
+
+                <i class="fa-solid fa-right-left"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         BULK ORDERS MAIN
+    ====================================================== -->
+
+    <main class="bulk-main">
+
+
+        <!-- Intro -->
+
+        <section class="bulk-intro">
+
+            <div class="bulk-intro-label">
+
+                <span></span>
+
+                BULK SUPPLY
+
+            </div>
+
+
+            <h1>
+                Stock more.
+                <em>Spend smarter.</em>
+            </h1>
+
+
+            <p>
+                Reliable stationery and art supplies for schools,
+                offices and organisations — with pricing designed
+                around your quantity needs.
+            </p>
+
+        </section>
+
+
+
+        <!-- Main Layout -->
+
+        <section class="bulk-workspace">
+
+            <!-- LEFT -->
+
+            <div class="bulk-benefits">
+
+
+                <!-- Schools -->
+
+                <div class="bulk-benefit">
+
+                    <div class="bulk-benefit-number">
+                        01
+                    </div>
+
+                    <div>
+
+                        <span>
+                            FOR SCHOOLS
+                        </span>
+
+                        <h2>
+                            Classroom-ready
+                            supplies.
+                        </h2>
+
+                        <p>
+                            Stock up on everyday stationery,
+                            notebooks, art materials and craft
+                            essentials for students and classrooms.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Offices -->
+
+                <div class="bulk-benefit">
+
+                    <div class="bulk-benefit-number">
+                        02
+                    </div>
+
+                    <div>
+
+                        <span>
+                            FOR OFFICES
+                        </span>
+
+                        <h2>
+                            Workplace
+                            essentials.
+                        </h2>
+
+                        <p>
+                            Keep your workplace supplied with
+                            writing tools, notebooks and everyday
+                            office stationery at volume pricing.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Pricing -->
+
+                <div class="bulk-benefit">
+
+                    <div class="bulk-benefit-number">
+                        03
+                    </div>
+
+                    <div>
+
+                        <span>
+                            BETTER PRICING
+                        </span>
+
+                        <h2>
+                            More quantity,
+                            better value.
+                        </h2>
+
+                        <p>
+                            Larger orders can qualify for
+                            quantity-based discounts, helping
+                            you get more value from every order.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Categories -->
+
+                <div class="bulk-categories">
+
+                    <span>
+                        AVAILABLE CATEGORIES
+                    </span>
+
+                    <div class="bulk-category-list">
+
+                        <span>Writing Supplies</span>
+
+                        <span>Notebooks &amp; Sketchbooks</span>
+
+                        <span>Art &amp; Painting</span>
+
+                        <span>Craft &amp; DIY</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- RIGHT FORM -->
+
+            <div class="bulk-form-panel">
+
+                <div class="bulk-form-heading">
+
+                    <span>
+                        REQUEST A QUOTE
+                    </span>
+
+                    <h2>
+                        Tell us what
+                        you need.
+                    </h2>
+
+                    <p>
+                        Share your requirements and our team
+                        will get back to you with suitable
+                        bulk pricing.
+                    </p>
+
+                </div>
+
+
+                <form class="bulk-order-form" action="#" method="post">
+
+
+                    <div class="bulk-form-row">
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkName">
+                                Your Name
+                            </label>
+
+                            <input type="text" id="bulkName" name="name" placeholder="Enter your name" required>
+
+                        </div>
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkOrganisation">
+                                Organisation
+                            </label>
+
+                            <input type="text" id="bulkOrganisation" name="organisation"
+                                placeholder="School / Office name" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="bulk-form-row">
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkType">
+                                Organisation Type
+                            </label>
+
+                            <select id="bulkType" name="organisation_type" required>
+
+                                <option value="">
+                                    Select type
+                                </option>
+
+                                <option value="school">
+                                    School
+                                </option>
+
+                                <option value="office">
+                                    Office
+                                </option>
+
+                                <option value="other">
+                                    Other Organisation
+                                </option>
+
+                            </select>
+
+                        </div>
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkEmail">
+                                Email Address
+                            </label>
+
+                            <input type="email" id="bulkEmail" name="email" placeholder="Enter your email" required>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="bulk-form-row">
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkPhone">
+                                Phone Number
+                            </label>
+
+                            <input type="tel" id="bulkPhone" name="phone" placeholder="Enter phone number">
+
+                        </div>
+
+
+                        <div class="bulk-form-group">
+
+                            <label for="bulkCategory">
+                                Product Category
+                            </label>
+
+                            <select id="bulkCategory" name="category" required>
+
+                                <option value="">
+                                    Select category
+                                </option>
+
+                                <option value="writing">
+                                    Writing Supplies
+                                </option>
+
+                                <option value="notebooks">
+                                    Notebooks &amp; Sketchbooks
+                                </option>
+
+                                <option value="art">
+                                    Art &amp; Painting
+                                </option>
+
+                                <option value="craft">
+                                    Craft &amp; DIY
+                                </option>
+
+                                <option value="multiple">
+                                    Multiple Categories
+                                </option>
+
+                            </select>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="bulk-form-group">
+
+                        <label for="bulkQuantity">
+                            Estimated Quantity
+                        </label>
+
+                        <input type="text" id="bulkQuantity" name="quantity" placeholder="e.g. 100 notebooks, 250 pens">
+
+                    </div>
+
+
+                    <div class="bulk-form-group">
+
+                        <label for="bulkMessage">
+                            Requirements
+                        </label>
+
+                        <textarea id="bulkMessage" name="message" rows="5"
+                            placeholder="Tell us about your order requirements..." required></textarea>
+
+                    </div>
+
+
+                    <button type="submit" class="bulk-submit-btn">
+
+                        Request Bulk Pricing
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

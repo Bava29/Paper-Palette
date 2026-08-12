@@ -1,0 +1,3086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) { }
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <a href="index.html" class="site-logo" aria-label="Paper & Palette Home">
+
+                    <img src="images/logo.png" class="logo-default" alt="Paper & Palette">
+
+                    <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+
+                </a>
+
+
+                <!-- =================================================
+                     MAIN NAVIGATION
+                ================================================== -->
+
+                <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+
+                        <!-- =========================
+                             HOME
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Home</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="index.html">
+                                        Home 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-2.html">
+                                        Home 2
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             ABOUT US
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="about.html" class="nav-link">
+
+                                About Us
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SHOP
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Shop</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown shop-dropdown">
+
+
+                                <!-- Writing Supplies -->
+
+                                <li>
+                                    <a href="writing-supplies.html">
+
+                                        Writing Supplies
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Notebooks -->
+
+                                <li>
+                                    <a href="notebooks-sketchbooks.html">
+
+                                        Notebooks &amp; Sketchbooks
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Art & Painting -->
+
+                                <li>
+                                    <a href="art-painting.html">
+
+                                        Art &amp; Painting
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Craft & DIY -->
+
+                                <li>
+                                    <a href="craft-diy.html">
+
+                                        Craft &amp; DIY
+
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SCHOOL DEALS
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="school-deals.html" class="nav-link active">
+
+                                School Deals
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             CONTACT
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- =================================================
+                         MOBILE MENU ACTIONS
+                         These appear only inside hamburger menu
+                    ================================================== -->
+
+                    <div class="mobile-menu-actions">
+
+
+                        <!-- =========================
+                             DARK MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileThemeToggle">
+
+                            <span>
+
+                                <i class="fa-solid fa-moon action-icon"></i>
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right action-arrow"></i>
+
+                        </button>
+
+
+                        <!-- =========================
+                             RTL MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileRtlToggle">
+
+                            <span>
+                                <i class="fa-solid fa-right-left action-icon"></i>
+                            </span>
+
+                        </button>
+
+
+                        <!-- =========================
+                             LOGIN
+                        ========================== -->
+
+                        <a href="login.html" class="mobile-login-btn">
+
+                            <span>
+
+                                <i class="fa-regular fa-user action-icon"></i>
+
+                                <span>Login</span>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right action-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =========================
+                             BULK ORDERS
+                        ========================== -->
+
+                        <a href="bulk-orders.html" class="mobile-bulk-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+                </nav>
+
+
+                <!-- =================================================
+                     HEADER ACTIONS
+                     Desktop only
+                ================================================== -->
+
+                <div class="navbar-actions">
+
+
+                    <!-- Desktop Actions -->
+
+                    <div class="desktop-actions">
+
+
+                        <!-- Dark Mode -->
+
+                        <button type="button" class="nav-icon-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                            title="Dark Mode">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+
+                        <!-- RTL -->
+
+                        <button type="button" class="nav-icon-btn" id="rtlToggle" aria-label="Toggle RTL Mode"
+                            title="RTL Mode">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+
+                        <!-- Login -->
+
+                        <a href="login.html" class="login-btn">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>
+                                Login
+                            </span>
+
+                        </a>
+
+
+                        <!-- Bulk Orders -->
+
+                        <a href="bulk-orders.html" class="bulk-orders-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu"
+                        aria-expanded="false">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+     INNER PAGE HERO
+====================================================== -->
+
+        <section class="inner-page-hero deals-page-hero">
+
+            <div class="container">
+
+                <div class="inner-page-hero-content">
+
+                    <div class="inner-page-hero-label">
+
+                        <span></span>
+
+                        SCHOOL DEALS
+
+                        <span></span>
+
+                    </div>
+
+                    <h1>
+                        Everything your
+                        school needs,
+
+                        <em>made simpler.</em>
+                    </h1>
+
+                    <p>
+                        From everyday school essentials to complete starter
+                        packs, discover quality products with convenient
+                        bulk pricing for schools, parents and students.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     SCHOOL DEALS - SHOP BY NEED
+====================================================== -->
+
+        <section class="school-needs-section">
+
+            <div class="container">
+
+                <!-- Section Heading -->
+
+                <div class="school-needs-heading">
+
+                    <div class="school-needs-label">
+
+                        <span></span>
+
+                        SHOP BY NEED
+
+                    </div>
+
+                    <h2>
+                        Find the right tools
+                        <em>for every idea.</em>
+                    </h2>
+
+                    <p>
+                        Explore thoughtfully selected stationery and
+                        art supplies, organised around the way students
+                        learn, create and work.
+                    </p>
+
+                </div>
+
+
+                <!-- Interactive Navigation -->
+
+                <div class="school-needs-layout">
+
+
+                    <!-- Category Navigation -->
+
+                    <div class="school-needs-nav">
+
+
+                        <button type="button" class="school-need-item active">
+
+                            <span class="school-need-number">
+                                01
+                            </span>
+
+                            <span class="school-need-name">
+                                Everyday Writing
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </button>
+
+
+                        <button type="button" class="school-need-item">
+
+                            <span class="school-need-number">
+                                02
+                            </span>
+
+                            <span class="school-need-name">
+                                Classroom Essentials
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </button>
+
+
+                        <button type="button" class="school-need-item">
+
+                            <span class="school-need-number">
+                                03
+                            </span>
+
+                            <span class="school-need-name">
+                                Drawing &amp; Colouring
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </button>
+
+
+                        <button type="button" class="school-need-item">
+
+                            <span class="school-need-number">
+                                04
+                            </span>
+
+                            <span class="school-need-name">
+                                Painting &amp; Craft
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </button>
+
+
+                        <button type="button" class="school-need-item">
+
+                            <span class="school-need-number">
+                                05
+                            </span>
+
+                            <span class="school-need-name">
+                                Complete Art Kits
+                            </span>
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </button>
+
+
+                    </div>
+
+
+                    <!-- Featured Visual -->
+
+                    <div class="school-needs-feature">
+
+                        <div class="school-needs-image">
+
+                            <img src="images/school-writing.jpg" alt="School stationery and writing supplies">
+
+                        </div>
+
+
+                        <div class="school-needs-feature-content">
+
+                            <div>
+
+                                <span>
+                                    01 / EVERYDAY WRITING
+                                </span>
+
+                                <h3>
+                                    Everything needed
+                                    for a better school day.
+                                </h3>
+
+                            </div>
+
+
+                            <a href="shop.html">
+
+                                Explore Collection
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
+     SCHOOL DEALS - SMART PRODUCT FILTER
+====================================================== -->
+
+        <section class="school-filter-section">
+
+            <div class="container">
+
+                <div class="school-filter-head">
+
+                    <div>
+
+                        <div class="school-filter-label">
+
+                            <span></span>
+
+                            FIND YOUR ESSENTIALS
+
+                        </div>
+
+                        <h2>
+                            Shop smarter.
+                            <em>Choose better.</em>
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        Narrow down your choices by category, use,
+                        price and availability to quickly find what
+                        you need.
+                    </p>
+
+                </div>
+
+
+                <!-- Filter Panel -->
+
+                <div class="school-filter-panel">
+
+                    <!-- Category -->
+
+                    <div class="school-filter-field">
+
+                        <label for="schoolCategory">
+                            CATEGORY
+                        </label>
+
+                        <select id="schoolCategory">
+
+                            <option value="all">
+                                All Categories
+                            </option>
+
+                            <option value="stationery">
+                                Stationery
+                            </option>
+
+                            <option value="art">
+                                Art Supplies
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Type -->
+
+                    <div class="school-filter-field">
+
+                        <label for="schoolType">
+                            TYPE
+                        </label>
+
+                        <select id="schoolType">
+
+                            <option value="all">
+                                All Types
+                            </option>
+
+                            <option value="writing">
+                                Writing
+                            </option>
+
+                            <option value="notebooks">
+                                Notebooks
+                            </option>
+
+                            <option value="geometry">
+                                Geometry
+                            </option>
+
+                            <option value="drawing">
+                                Drawing
+                            </option>
+
+                            <option value="colouring">
+                                Colouring
+                            </option>
+
+                            <option value="painting">
+                                Painting
+                            </option>
+
+                            <option value="craft">
+                                Craft
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Price -->
+
+                    <div class="school-filter-field">
+
+                        <label for="schoolPrice">
+                            PRICE RANGE
+                        </label>
+
+                        <select id="schoolPrice">
+
+                            <option value="all">
+                                All Prices
+                            </option>
+
+                            <option value="under-100">
+                                Under ₹100
+                            </option>
+
+                            <option value="100-250">
+                                ₹100 – ₹250
+                            </option>
+
+                            <option value="250-500">
+                                ₹250 – ₹500
+                            </option>
+
+                            <option value="above-500">
+                                Above ₹500
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Sort -->
+
+                    <div class="school-filter-field">
+
+                        <label for="schoolSort">
+                            SORT BY
+                        </label>
+
+                        <select id="schoolSort">
+
+                            <option value="popular">
+                                Most Popular
+                            </option>
+
+                            <option value="new">
+                                New Arrivals
+                            </option>
+
+                            <option value="low">
+                                Price: Low to High
+                            </option>
+
+                            <option value="high">
+                                Price: High to Low
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- Actions -->
+
+                    <div class="school-filter-actions">
+
+                        <button type="button" class="school-filter-apply">
+
+                            Apply Filters
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+                        <button type="button" class="school-filter-reset">
+
+                            Reset
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Active Filters -->
+
+                <div class="school-active-filters">
+
+                    <span class="school-result-count">
+                        Showing <strong>24</strong> products
+                    </span>
+
+                    <div class="school-filter-tags">
+
+                        <button type="button">
+                            Stationery
+                            <i class="fa-solid fa-xmark"></i>
+                        </button>
+
+                        <button type="button">
+                            Clear all
+                        </button>
+
+                    </div>
+
+                </div>
+
+                <!-- =====================================================
+     SCHOOL DEALS - FILTERED PRODUCT CATALOGUE
+====================================================== -->
+
+                <div class="school-filter-products">
+
+                    <!-- Product 01 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="writing"
+                        data-price="60" data-popular="98" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                BESTSELLER
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p1.jpg" alt="Smooth writing ball pen">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / WRITING
+                            </span>
+
+                            <h3>
+                                Smooth Ball Pens
+                            </h3>
+
+                            <p>
+                                Comfortable everyday pens for school
+                                notes, homework and classroom work.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹60
+                                    </strong>
+
+                                    <span>
+                                        / pack
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 02 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="notebooks"
+                        data-price="180" data-popular="94" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p2.jpg" alt="School notebooks">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / NOTEBOOKS
+                            </span>
+
+                            <h3>
+                                Class Notebooks
+                            </h3>
+
+                            <p>
+                                Durable ruled notebooks designed for each and
+                                everyday classroom learning.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹180
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 03 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="geometry"
+                        data-price="125" data-popular="89" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                POPULAR
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p3.jpg" alt="Geometry stationery set">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / GEOMETRY
+                            </span>
+
+                            <h3>
+                                Geometry Set
+                            </h3>
+
+                            <p>
+                                Essential measuring and drawing tools
+                                packed neatly for everyday school use.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹125
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 04 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="colouring" data-price="220"
+                        data-popular="96" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p4.jpg" alt="Colour pencils">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / COLOURING
+                            </span>
+
+                            <h3>
+                                Colour Pencil Set
+                            </h3>
+
+                            <p>
+                                Rich, smooth colours for drawing,
+                                colouring and more creative school projects.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹220
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 05 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="drawing" data-price="150"
+                        data-popular="91" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                FAVOURITE
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p5.jpg" alt="Sketch pens">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / DRAWING
+                            </span>
+
+                            <h3>
+                                Sketch Pens
+                            </h3>
+
+                            <p>
+                                Bright, expressive colours for school
+                                drawings, and creative work.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹150
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 06 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="painting" data-price="280"
+                        data-popular="87" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                VALUE SET
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p6.jpg" alt="Water colour set">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / PAINTING
+                            </span>
+
+                            <h3>
+                                Water Colour Set
+                            </h3>
+
+                            <p>
+                                A versatile colour set for painting,
+                                projects and classroom activities.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹280
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 07 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="craft" data-price="195"
+                        data-popular="83" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p7.jpg" alt="Craft paper collection">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / CRAFT
+                            </span>
+
+                            <h3>
+                                Craft Paper Set
+                            </h3>
+
+                            <p>
+                                Colourful papers for school crafts,
+                                projects and creative activities.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹195
+                                    </strong>
+
+                                    <span>
+                                        / set
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 08 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="drawing" data-price="450"
+                        data-popular="99" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                BEST VALUE
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p8.jpg" alt="Complete school art kit">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / ART KIT
+                            </span>
+
+                            <h3>
+                                Creative Art Kit
+                            </h3>
+
+                            <p>
+                                A versatile collection of essential
+                                drawing and colouring supplies.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+
+                                    <strong>
+                                        ₹450
+                                    </strong>
+
+                                    <span>
+                                        / kit
+                                    </span>
+
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- Product 09 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="writing"
+                        data-price="95" data-popular="86" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                VALUE PACK
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p9.jpg" alt="Graphite pencils">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / WRITING
+                            </span>
+
+                            <h3>
+                                Graphite Pencils
+                            </h3>
+
+                            <p>
+                                Smooth graphite pencils for writing,
+                                sketching and classroom work.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹95</strong>
+                                    <span>/ pack</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 10 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="notebooks"
+                        data-price="240" data-popular="90" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p10.jpg" alt="Student sketchbook">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / NOTEBOOKS
+                            </span>
+
+                            <h3>
+                                Sketchbook
+                            </h3>
+
+                            <p>
+                                Quality blank pages made for drawing,
+                                practice work and ideas.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹240</strong>
+                                    <span>/ book</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 11 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="writing"
+                        data-price="135" data-popular="88" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                FAVOURITE
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p11.jpg" alt="Highlighter set">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / WRITING
+                            </span>
+
+                            <h3>
+                                Highlighter Set
+                            </h3>
+
+                            <p>
+                                Bright, smooth highlighters for notes,
+                                revision and topics.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹135</strong>
+                                    <span>/ set</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 12 -->
+
+                    <article class="school-filter-product" data-category="stationery" data-type="geometry"
+                        data-price="320" data-popular="82" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p12.jpg" alt="Mathematics stationery kit">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                STATIONERY / GEOMETRY
+                            </span>
+
+                            <h3>
+                                Math Essentials Kit
+                            </h3>
+
+                            <p>
+                                A practical collection of measuring,
+                                drawing and calculation essentials.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹320</strong>
+                                    <span>/ kit</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 13 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="colouring" data-price="175"
+                        data-popular="93" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                BESTSELLER
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p13.jpg" alt="Colour crayons">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / COLOURING
+                            </span>
+
+                            <h3>
+                                Crayon Collection
+                            </h3>
+
+                            <p>
+                                Smooth and vibrant crayons designed
+                                for creative activities.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹175</strong>
+                                    <span>/ set</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 14 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="painting" data-price="390"
+                        data-popular="85" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                VALUE SET
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p14.jpg" alt="Paint brush set">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / PAINTING
+                            </span>
+
+                            <h3>
+                                All-size Paint Brush
+                            </h3>
+
+                            <p>
+                                Versatile brushes for watercolour,
+                                acrylic and school art projects.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹390</strong>
+                                    <span>/ set</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 15 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="craft" data-price="210"
+                        data-popular="80" data-new="true">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge school-product-new">
+                                NEW
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p15.jpg" alt="Kids craft kit">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / CRAFT
+                            </span>
+
+                            <h3>
+                                Craft Activity Kit
+                            </h3>
+
+                            <p>
+                                A fun collection of craft materials for
+                                school projects and activities.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹210</strong>
+                                    <span>/ kit</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 16 -->
+
+                    <article class="school-filter-product" data-category="art" data-type="drawing" data-price="340"
+                        data-popular="95" data-new="false">
+
+                        <div class="school-product-image">
+
+                            <span class="school-product-badge">
+                                POPULAR
+                            </span>
+
+                            <button type="button" class="school-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+                            <img src="images/p16.jpg" alt="Oil pastel set">
+
+                        </div>
+
+                        <div class="school-product-content">
+
+                            <span class="school-product-category">
+                                ART / DRAWING
+                            </span>
+
+                            <h3>
+                                Oil Pastel Set
+                            </h3>
+
+                            <p>
+                                Rich, blendable pastels for expressive
+                                drawings and projects.
+                            </p>
+
+                            <div class="school-product-bottom">
+
+                                <div>
+                                    <strong>₹340</strong>
+                                    <span>/ set</span>
+                                </div>
+
+                                <button type="button" class="school-product-add">
+
+                                    Add to Kit
+                                    <i class="fa-solid fa-plus"></i>
+
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+                <!-- No Results -->
+
+                <div class="school-filter-empty">
+
+                    <i class="fa-regular fa-face-frown"></i>
+
+                    <h3>
+                        No products found
+                    </h3>
+
+                    <p>
+                        Try changing your filters to discover more
+                        stationery and art supplies.
+                    </p>
+
+                    <button type="button">
+                        Reset Filters
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     SCHOOL DEALS - BUILD YOUR SCHOOL KIT
+====================================================== -->
+
+        <section class="school-kit-section">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="school-kit-heading">
+
+                    <div class="school-kit-label">
+
+                        <span></span>
+
+                        BUILD YOUR KIT
+
+                        <span></span>
+
+                    </div>
+
+                    <h2>
+                        Put together a kit
+                        <em>that fits your needs.</em>
+                    </h2>
+
+                    <p>
+                        Choose the essentials you need and create
+                        a personalised stationery and art supply kit
+                        in just a few steps.
+                    </p>
+
+                </div>
+
+
+                <!-- Kit Builder -->
+
+                <div class="school-kit-builder">
+
+
+                    <!-- Left Side -->
+
+                    <div class="school-kit-selection">
+
+                        <div class="school-kit-step">
+
+                            <span class="school-kit-step-number">
+                                01
+                            </span>
+
+                            <div>
+
+                                <span class="school-kit-step-label">
+                                    CHOOSE A CATEGORY
+                                </span>
+
+                                <h3>
+                                    What are you creating today?
+                                </h3>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="school-kit-categories">
+
+                            <button type="button" class="school-kit-category active" data-kit-category="all">
+
+                                <i class="fa-solid fa-layer-group"></i>
+
+                                <span>
+                                    All Essentials
+                                </span>
+
+                            </button>
+
+
+                            <button type="button" class="school-kit-category" data-kit-category="stationery">
+
+                                <i class="fa-solid fa-pen"></i>
+
+                                <span>
+                                    Stationery
+                                </span>
+
+                            </button>
+
+
+                            <button type="button" class="school-kit-category" data-kit-category="art">
+
+                                <i class="fa-solid fa-palette"></i>
+
+                                <span>
+                                    Art Supplies
+                                </span>
+
+                            </button>
+
+                        </div>
+
+
+                        <!-- Kit Products -->
+
+                        <div class="school-kit-products">
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="stationery"
+                                data-kit-price="60">
+
+                                <input type="checkbox" value="Smooth Writing Ball Pens">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Smooth Writing Ball Pens
+                                    </strong>
+
+                                    <small>
+                                        Everyday writing
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹60
+                                </strong>
+
+                            </label>
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="stationery"
+                                data-kit-price="180">
+
+                                <input type="checkbox" value="Everyday Class Notebooks">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Everyday Class Notebooks
+                                    </strong>
+
+                                    <small>
+                                        Classroom essentials
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹180
+                                </strong>
+
+                            </label>
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="stationery"
+                                data-kit-price="125">
+
+                                <input type="checkbox" value="Complete Geometry Set">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Complete Geometry Set
+                                    </strong>
+
+                                    <small>
+                                        Maths essentials
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹125
+                                </strong>
+
+                            </label>
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="art"
+                                data-kit-price="220">
+
+                                <input type="checkbox" value="Colour Pencil Collection">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Colour Pencil Collection
+                                    </strong>
+
+                                    <small>
+                                        Drawing & colouring
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹220
+                                </strong>
+
+                            </label>
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="art"
+                                data-kit-price="280">
+
+                                <input type="checkbox" value="Water Colour Essentials">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Water Colour Essentials
+                                    </strong>
+
+                                    <small>
+                                        Painting supplies
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹280
+                                </strong>
+
+                            </label>
+
+
+                            <label class="school-kit-product" data-kit-product data-kit-category="art"
+                                data-kit-price="340">
+
+                                <input type="checkbox" value="Premium Oil Pastel Set">
+
+                                <span class="school-kit-check">
+                                    <i class="fa-solid fa-check"></i>
+                                </span>
+
+                                <span class="school-kit-product-info">
+
+                                    <strong>
+                                        Premium Oil Pastel Set
+                                    </strong>
+
+                                    <small>
+                                        Creative drawing
+                                    </small>
+
+                                </span>
+
+                                <strong class="school-kit-price">
+                                    ₹340
+                                </strong>
+
+                            </label>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Right Summary -->
+
+                    <aside class="school-kit-summary">
+
+                        <div class="school-kit-summary-top">
+
+                            <span>
+                                YOUR SCHOOL KIT
+                            </span>
+
+                            <div class="school-kit-summary-icon">
+
+                                <i class="fa-solid fa-bag-shopping"></i>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="school-kit-summary-main">
+
+                            <strong class="school-kit-count">
+                                0
+                            </strong>
+
+                            <span>
+                                items selected
+                            </span>
+
+                        </div>
+
+
+                        <div class="school-kit-summary-list">
+
+                            <div>
+
+                                <span>
+                                    Selected items
+                                </span>
+
+                                <strong class="school-kit-selected-count">
+                                    0
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    Estimated total
+                                </span>
+
+                                <strong class="school-kit-total">
+                                    ₹0
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="school-kit-summary-note">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <p>
+                                Final pricing may vary for larger
+                                quantities and bulk orders.
+                            </p>
+
+                        </div>
+
+
+                        <button type="button" class="school-kit-continue">
+
+                            Continue With My Kit
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </button>
+
+
+                        <button type="button" class="school-kit-clear">
+
+                            Clear Selection
+
+                        </button>
+
+                    </aside>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     SCHOOL DEALS - BULK SAVINGS
+====================================================== -->
+
+        <section class="school-bulk-section">
+
+            <div class="container">
+
+                <div class="school-bulk-layout">
+
+                    <!-- Left Content -->
+
+                    <div class="school-bulk-content">
+
+                        <div class="school-bulk-label">
+
+                            <span></span>
+
+                            BULK SAVINGS
+
+                        </div>
+
+                        <h2>
+                            More essentials.
+                            <em>Better value.</em>
+                        </h2>
+
+                        <p>
+                            Planning a larger stationery or art
+                            supply purchase? The more you order,
+                            the more you save.
+                        </p>
+
+                        <div class="school-bulk-points">
+
+                            <div>
+
+                                <span>
+                                    01
+                                </span>
+
+                                <strong>
+                                    Better pricing
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    02
+                                </span>
+
+                                <strong>
+                                    Flexible quantities
+                                </strong>
+
+                            </div>
+
+                            <div>
+
+                                <span>
+                                    03
+                                </span>
+
+                                <strong>
+                                    One simple order
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- Savings Calculator -->
+
+                    <div class="school-bulk-calculator">
+
+                        <div class="school-bulk-calculator-head">
+
+                            <span>
+                                ESTIMATE YOUR SAVINGS
+                            </span>
+
+                            <i class="fa-solid fa-calculator"></i>
+
+                        </div>
+
+
+                        <!-- Quantity -->
+
+                        <div class="school-bulk-quantity">
+
+                            <div class="school-bulk-quantity-head">
+
+                                <span>
+                                    NUMBER OF ITEMS
+                                </span>
+
+                                <strong class="school-bulk-quantity-value">
+                                    25
+                                </strong>
+
+                            </div>
+
+
+                            <input type="range" id="schoolBulkRange" min="10" max="200" step="5" value="25"
+                                class="school-bulk-range">
+
+                            <div class="school-bulk-range-labels">
+
+                                <span>
+                                    10
+                                </span>
+
+                                <span>
+                                    200+
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Pricing -->
+
+                        <div class="school-bulk-pricing">
+
+                            <div>
+
+                                <span>
+                                    Standard value
+                                </span>
+
+                                <strong class="school-bulk-standard">
+                                    ₹2,500
+                                </strong>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>
+                                    Bulk value
+                                </span>
+
+                                <strong class="school-bulk-discounted">
+                                    ₹2,375
+                                </strong>
+
+                            </div>
+
+
+                            <div class="school-bulk-saving-row">
+
+                                <span>
+                                    You save
+                                </span>
+
+                                <strong class="school-bulk-saving">
+                                    ₹125
+                                </strong>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Discount -->
+
+                        <div class="school-bulk-discount">
+
+                            <div>
+
+                                <span>
+                                    YOUR BULK DISCOUNT
+                                </span>
+
+                                <strong class="school-bulk-percent">
+                                    5%
+                                </strong>
+
+                            </div>
+
+                            <div class="school-bulk-progress">
+
+                                <span class="school-bulk-progress-fill">
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <a href="contact.html" class="school-bulk-button">
+
+                            Request Bulk Pricing
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <p class="school-bulk-note">
+
+                            Final pricing may vary depending on
+                            products and quantities.
+
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     SCHOOL DEALS - BULK ORDER ENQUIRY
+====================================================== -->
+
+        <section class="school-enquiry-section">
+
+            <div class="container">
+
+                <div class="school-enquiry-layout">
+
+                    <!-- LEFT CONTENT -->
+
+                    <div class="school-enquiry-intro">
+
+                        <div class="school-enquiry-label">
+
+                            <span></span>
+
+                            BULK ORDER ENQUIRY
+
+                        </div>
+
+                        <h2>
+                            Planning something
+                            <em>bigger?</em>
+                        </h2>
+
+                        <p>
+                            Tell us what you need and our team will
+                            help you put together the right stationery
+                            and art supplies at the right quantity.
+                        </p>
+
+
+                        <div class="school-enquiry-highlights">
+
+                            <div>
+
+                                <span>01</span>
+
+                                <div>
+                                    <strong>
+                                        Flexible quantities
+                                    </strong>
+
+                                    <small>
+                                        Order according to your needs.
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>02</span>
+
+                                <div>
+                                    <strong>
+                                        Better bulk pricing
+                                    </strong>
+
+                                    <small>
+                                        Get pricing based on quantity.
+                                    </small>
+                                </div>
+
+                            </div>
+
+
+                            <div>
+
+                                <span>03</span>
+
+                                <div>
+                                    <strong>
+                                        Personal assistance
+                                    </strong>
+
+                                    <small>
+                                        Our team helps with your order.
+                                    </small>
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="school-enquiry-response">
+
+                            <i class="fa-regular fa-clock"></i>
+
+                            <div>
+
+                                <strong>
+                                    Quick response
+                                </strong>
+
+                                <p>
+                                    We usually get back to enquiries
+                                    within one business day.
+                                </p>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- FORM -->
+
+                    <div class="school-enquiry-form-wrap">
+
+                        <div class="school-enquiry-form-head">
+
+                            <div>
+
+                                <span>
+                                    LET'S PLAN YOUR ORDER
+                                </span>
+
+                                <h3>
+                                    Tell us what you need.
+                                </h3>
+
+                            </div>
+
+                            <div class="school-enquiry-form-number">
+                                01
+                            </div>
+
+                        </div>
+
+
+                        <form class="school-enquiry-form" id="schoolBulkEnquiryForm">
+
+
+                            <!-- NAME -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolName">
+                                    YOUR NAME
+                                </label>
+
+                                <input type="text" id="schoolName" name="name" placeholder="Enter your name" required>
+
+                            </div>
+
+
+                            <!-- EMAIL -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolEmail">
+                                    EMAIL ADDRESS
+                                </label>
+
+                                <input type="email" id="schoolEmail" name="email" placeholder="you@example.com"
+                                    required>
+
+                            </div>
+
+
+                            <!-- PHONE -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolPhone">
+                                    PHONE NUMBER
+                                </label>
+
+                                <input type="tel" id="schoolPhone" name="phone" placeholder="+91 00000 00000" required>
+
+                            </div>
+
+
+                            <!-- ORDER TYPE -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolOrderType">
+                                    ORDER TYPE
+                                </label>
+
+                                <select id="schoolOrderType" name="orderType" required>
+
+                                    <option value="">
+                                        Select order type
+                                    </option>
+
+                                    <option value="stationery">
+                                        Stationery
+                                    </option>
+
+                                    <option value="art">
+                                        Art Supplies
+                                    </option>
+
+                                    <option value="mixed">
+                                        Stationery + Art Supplies
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- QUANTITY -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolQuantity">
+                                    ESTIMATED QUANTITY
+                                </label>
+
+                                <select id="schoolQuantity" name="quantity">
+
+                                    <option value="">
+                                        Select quantity
+                                    </option>
+
+                                    <option value="10-25">
+                                        10 – 25 items
+                                    </option>
+
+                                    <option value="25-50">
+                                        25 – 50 items
+                                    </option>
+
+                                    <option value="50-100">
+                                        50 – 100 items
+                                    </option>
+
+                                    <option value="100-200">
+                                        100 – 200 items
+                                    </option>
+
+                                    <option value="200+">
+                                        200+ items
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- DELIVERY -->
+
+                            <div class="school-enquiry-field">
+
+                                <label for="schoolDelivery">
+                                    REQUIRED BY
+                                </label>
+
+                                <select id="schoolDelivery" name="delivery">
+
+                                    <option value="">
+                                        Select timeline
+                                    </option>
+
+                                    <option value="urgent">
+                                        Within 1 week
+                                    </option>
+
+                                    <option value="soon">
+                                        1 – 2 weeks
+                                    </option>
+
+                                    <option value="planned">
+                                        2 – 4 weeks
+                                    </option>
+
+                                    <option value="flexible">
+                                        Flexible timeline
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+
+                            <!-- MESSAGE -->
+
+                            <div class="school-enquiry-field school-enquiry-full">
+
+                                <label for="schoolMessage">
+                                    WHAT DO YOU NEED?
+                                </label>
+
+                                <textarea id="schoolMessage" name="message" rows="4"
+                                    placeholder="Tell us about the products, quantities or specific requirements..."></textarea>
+
+                            </div>
+
+
+                            <!-- FILE -->
+
+                            <div class="school-enquiry-upload school-enquiry-full">
+
+                                <label for="schoolAttachment">
+
+                                    <i class="fa-solid fa-paperclip"></i>
+
+                                    <span>
+                                        Attach a reference list
+                                    </span>
+
+                                    <small>
+                                        PDF, XLSX, DOCX or image
+                                    </small>
+
+                                </label>
+
+                                <input type="file" id="schoolAttachment" name="attachment"
+                                    accept=".pdf,.xlsx,.xls,.doc,.docx,.jpg,.jpeg,.png">
+
+                            </div>
+
+
+                            <!-- SUBMIT -->
+
+                            <div class="school-enquiry-submit school-enquiry-full">
+
+                                <button type="submit">
+
+                                    Send Bulk Enquiry
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </button>
+
+                                <span>
+                                    No commitment required.
+                                </span>
+
+                            </div>
+
+
+                            <!-- SUCCESS -->
+
+                            <div class="school-enquiry-success school-enquiry-full">
+
+                                <i class="fa-solid fa-circle-check"></i>
+
+                                <div>
+
+                                    <strong>
+                                        Enquiry received.
+                                    </strong>
+
+                                    <p>
+                                        Thanks! We'll get back to you
+                                        with the next steps.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- =========================================
+                 BRAND
+            ========================================== -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo-dark.png" class="logo-default" alt="Paper & Palette">
+
+                        <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+                    </a>
+
+                    <p>
+                        Discover quality stationery, art supplies,
+                        creative essentials and school-ready bundles
+                        designed to inspire every idea.
+                    </p>
+
+
+                    <!-- Social Links -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Pinterest" title="Pinterest">
+
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="YouTube" title="YouTube">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                 QUICK LINKS
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="school-deals.html">
+                                School Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 SHOP
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Shop
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="writing-supplies.html">
+                                Writing Supplies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="notebooks-sketchbooks.html">
+                                Notebooks &amp; Sketchbooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="art-painting.html">
+                                Art &amp; Painting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="craft-diy.html">
+                                Craft &amp; DIY
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="bulk-orders.html">
+                                Bulk Orders
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Get In Touch
+                    </h4>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <p>
+                            24 Creative Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <a href="mailto:hello@paperandpalette.com">
+                            hello@paperandpalette.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <p>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+             FOOTER BOTTOM
+        ========================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Paper &amp; Palette.
+                    All Rights Reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

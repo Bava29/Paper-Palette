@@ -1,0 +1,2139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) { }
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <a href="index.html" class="site-logo" aria-label="Paper & Palette Home">
+
+                    <img src="images/logo.png" class="logo-default" alt="Paper & Palette">
+
+                    <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+
+                </a>
+
+
+                <!-- =================================================
+                     MAIN NAVIGATION
+                ================================================== -->
+
+                <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+
+                        <!-- =========================
+                             HOME
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger active">
+
+                                <span>Home</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="index.html">
+                                        Home 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-2.html" class="active">
+                                        Home 2
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             ABOUT US
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="about.html" class="nav-link">
+
+                                About Us
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SHOP
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Shop</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown shop-dropdown">
+
+
+                                <!-- Writing Supplies -->
+
+                                <li>
+                                    <a href="writing-supplies.html">
+
+                                        Writing Supplies
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Notebooks -->
+
+                                <li>
+                                    <a href="notebooks-sketchbooks.html">
+
+                                        Notebooks &amp; Sketchbooks
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Art & Painting -->
+
+                                <li>
+                                    <a href="art-painting.html">
+
+                                        Art &amp; Painting
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Craft & DIY -->
+
+                                <li>
+                                    <a href="craft-diy.html">
+
+                                        Craft &amp; DIY
+
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SCHOOL DEALS
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="school-deals.html" class="nav-link">
+
+                                School Deals
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             CONTACT
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- =================================================
+                         MOBILE MENU ACTIONS
+                         These appear only inside hamburger menu
+                    ================================================== -->
+
+                    <div class="mobile-menu-actions">
+
+
+                        <!-- =========================
+                             DARK MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileThemeToggle">
+
+                            <span>
+
+                                <i class="fa-solid fa-moon action-icon"></i>
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right action-arrow"></i>
+
+                        </button>
+
+
+                        <!-- =========================
+                             RTL MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileRtlToggle">
+
+                            <span>
+                                <i class="fa-solid fa-right-left action-icon"></i>
+                            </span>
+
+                        </button>
+
+
+                        <!-- =========================
+                             LOGIN
+                        ========================== -->
+
+                        <a href="login.html" class="mobile-login-btn">
+
+                            <span>
+
+                                <i class="fa-regular fa-user action-icon"></i>
+
+                                <span>Login</span>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right action-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =========================
+                             BULK ORDERS
+                        ========================== -->
+
+                        <a href="bulk-orders.html" class="mobile-bulk-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+                </nav>
+
+
+                <!-- =================================================
+                     HEADER ACTIONS
+                     Desktop only
+                ================================================== -->
+
+                <div class="navbar-actions">
+
+
+                    <!-- Desktop Actions -->
+
+                    <div class="desktop-actions">
+
+
+                        <!-- Dark Mode -->
+
+                        <button type="button" class="nav-icon-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                            title="Dark Mode">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+
+                        <!-- RTL -->
+
+                        <button type="button" class="nav-icon-btn" id="rtlToggle" aria-label="Toggle RTL Mode"
+                            title="RTL Mode">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+
+                        <!-- Login -->
+
+                        <a href="login.html" class="login-btn">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>
+                                Login
+                            </span>
+
+                        </a>
+
+
+                        <!-- Bulk Orders -->
+
+                        <a href="bulk-orders.html" class="bulk-orders-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu"
+                        aria-expanded="false">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+     HOME 2 HERO
+====================================================== -->
+
+        <section class="home-two-hero">
+
+            <!-- Background Overlay -->
+
+            <div class="home-two-hero-overlay"></div>
+
+
+            <div class="container home-two-hero-container">
+
+
+                <!-- Hero Content -->
+
+                <div class="home-two-hero-content">
+
+
+                    <div class="home-two-hero-label">
+
+                        <span></span>
+
+                        THE PAPER &amp; PALETTE EDIT
+
+                        <span></span>
+
+                    </div>
+
+
+                    <h1>
+                        The art of
+                        <em>everyday creativity.</em>
+                    </h1>
+
+
+                    <p>
+                        Thoughtfully chosen stationery and art supplies
+                        for ideas worth making.
+                    </p>
+
+
+                    <div class="home-two-hero-actions">
+
+                        <a href="shop.html" class="home-two-hero-primary">
+
+                            Shop Collection
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="shop.html" class="home-two-hero-secondary">
+
+                            Explore Categories
+
+                            <i class="fa-solid fa-arrow-up-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Details BELOW BUTTONS -->
+
+                    <div class="home-two-hero-bottom">
+
+                        <div class="home-two-hero-detail">
+
+                            <span>01</span>
+
+                            <p>
+                                Thoughtfully<br>
+                                selected
+                            </p>
+
+                        </div>
+
+
+                        <div class="home-two-hero-detail">
+
+                            <span>02</span>
+
+                            <p>
+                                Made for<br>
+                                everyday ideas
+                            </p>
+
+                        </div>
+
+
+                        <div class="home-two-hero-detail">
+
+                            <span>03</span>
+
+                            <p>
+                                Quality<br>
+                                essentials
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - NEW ARRIVALS
+====================================================== -->
+
+        <section class="home-two-arrivals">
+
+            <div class="container">
+
+                <div class="arrivals-heading">
+
+                    <div class="arrivals-label">
+                        <span></span>
+                        FRESH ON THE SHELF
+                    </div>
+
+                    <div class="arrivals-title-row">
+
+                        <h2>
+                            New things
+                            <em>to discover.</em>
+                        </h2>
+
+                        <a href="shop.html" class="arrivals-view-link">
+                            View all
+                            <i class="fa-solid fa-arrow-up-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <div class="arrivals-showcase">
+
+
+                    <!-- Product 01 -->
+
+                    <article class="arrival-item">
+
+                        <div class="arrival-image">
+
+                            <span class="arrival-badge">
+                                NEW
+                            </span>
+
+                            <img src="images/new-1.png" alt="Premium notebook">
+
+                        </div>
+
+                        <div class="arrival-info">
+
+                            <span>
+                                NOTEBOOKS
+                            </span>
+
+                            <h3>
+                                Linen Bound Journal
+                            </h3>
+
+                            <div class="arrival-bottom">
+
+                                <strong>₹ 349</strong>
+
+                                <a href="#">
+                                    Add to Cart
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 02 -->
+
+                    <article class="arrival-item">
+
+                        <div class="arrival-image">
+
+                            <span class="arrival-badge">
+                                NEW
+                            </span>
+
+                            <img src="images/new-2.png" alt="Premium writing set">
+
+                        </div>
+
+                        <div class="arrival-info">
+
+                            <span>
+                                WRITING
+                            </span>
+
+                            <h3>
+                                Everyday Writing Set
+                            </h3>
+
+                            <div class="arrival-bottom">
+
+                                <strong>₹ 429</strong>
+
+                                <a href="#">
+                                    Add to Cart
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 03 -->
+
+                    <article class="arrival-item">
+
+                        <div class="arrival-image">
+
+                            <span class="arrival-badge">
+                                NEW
+                            </span>
+
+                            <img src="images/new-3.png" alt="Watercolor set">
+
+                        </div>
+
+                        <div class="arrival-info">
+
+                            <span>
+                                ART
+                            </span>
+
+                            <h3>
+                                Studio Watercolor Set
+                            </h3>
+
+                            <div class="arrival-bottom">
+
+                                <strong>₹ 599</strong>
+
+                                <a href="#">
+                                    Add to Cart
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Product 04 -->
+
+                    <article class="arrival-item">
+
+                        <div class="arrival-image">
+
+                            <span class="arrival-badge">
+                                NEW
+                            </span>
+
+                            <img src="images/new-4.png" alt="Creative DIY kit">
+
+                        </div>
+
+                        <div class="arrival-info">
+
+                            <span>
+                                CRAFT
+                            </span>
+
+                            <h3>
+                                Creative DIY Kit
+                            </h3>
+
+                            <div class="arrival-bottom">
+
+                                <strong>₹ 479</strong>
+
+                                <a href="#">
+                                    Add to Cart
+                                    <i class="fa-solid fa-arrow-right"></i>
+                                </a>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     HOME 2 - THE PAPER & PALETTE EDIT
+====================================================== -->
+
+        <section class="home-two-edit">
+
+            <div class="container">
+
+                <div class="edit-layout">
+
+
+                    <!-- IMAGE SIDE -->
+
+                    <div class="edit-visual">
+
+                        <img src="images/palette-edit.jpg" alt="Curated stationery and art essentials">
+
+                        <div class="edit-image-note">
+
+                            <span>CURATED</span>
+
+                            <strong>
+                                02 / 07
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- CONTENT SIDE -->
+
+                    <div class="edit-content">
+
+                        <div class="edit-label">
+
+                            <span></span>
+
+                            THE PAPER &amp; PALETTE EDIT
+
+                        </div>
+
+
+                        <h2>
+                            Beautiful things,
+                            <em>chosen with purpose.</em>
+                        </h2>
+
+
+                        <p class="edit-description">
+
+                            A considered collection of stationery,
+                            paper goods and creative tools selected
+                            for the little moments that make creating
+                            feel special.
+
+                        </p>
+
+
+                        <div class="edit-details">
+
+
+                            <div class="edit-detail">
+
+                                <span>
+                                    01
+                                </span>
+
+                                <div>
+
+                                    <h3>
+                                        Thoughtfully chosen
+                                    </h3>
+
+                                    <p>
+                                        Quality essentials worth
+                                        keeping close.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="edit-detail">
+
+                                <span>
+                                    02
+                                </span>
+
+                                <div>
+
+                                    <h3>
+                                        Made to inspire
+                                    </h3>
+
+                                    <p>
+                                        Beautiful tools for everyday
+                                        creative moments.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                            <div class="edit-detail">
+
+                                <span>
+                                    03
+                                </span>
+
+                                <div>
+
+                                    <h3>
+                                        Simply useful
+                                    </h3>
+
+                                    <p>
+                                        Designed to be used,
+                                        enjoyed and loved.
+                                    </p>
+
+                                </div>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <a href="shop.html" class="edit-cta">
+
+                            Explore the Edit
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - CREATE YOUR WAY
+====================================================== -->
+
+        <section class="home-two-create">
+
+            <div class="container">
+
+
+                <!-- Heading -->
+
+                <div class="create-heading">
+
+                    <div class="create-label">
+
+                        <span></span>
+
+                        FIND YOUR MEDIUM
+
+                    </div>
+
+
+                    <div class="create-heading-row">
+
+                        <h2>
+                            Create
+                            <em>your way.</em>
+                        </h2>
+
+                        <p>
+                            Whether you're putting thoughts on paper,
+                            sketching an idea or building something
+                            from scratch, start with the tools that
+                            feel right for you.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Creative List -->
+
+                <div class="create-list">
+
+
+                    <!-- Write -->
+
+                    <a href="shop.html" class="create-item">
+
+                        <div class="create-number">
+                            01
+                        </div>
+
+
+                        <div class="create-main">
+
+                            <span>
+                                WORDS &amp; IDEAS
+                            </span>
+
+                            <h3>
+                                Write
+                            </h3>
+
+                        </div>
+
+
+                        <div class="create-description">
+
+                            <p>
+                                Journals, pens and paper
+                                for thoughts worth keeping.
+                            </p>
+
+                        </div>
+
+
+                        <div class="create-arrow">
+                            <i class="fa-solid fa-pen"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Draw -->
+
+                    <a href="shop.html" class="create-item">
+
+                        <div class="create-number">
+                            02
+                        </div>
+
+
+                        <div class="create-main">
+
+                            <span>
+                                LINES &amp; FORMS
+                            </span>
+
+                            <h3>
+                                Draw
+                            </h3>
+
+                        </div>
+
+
+                        <div class="create-description">
+
+                            <p>
+                                Sketchbooks and drawing tools
+                                for ideas in motion.
+                            </p>
+
+                        </div>
+
+
+                        <div class="create-arrow">
+                            <i class="fa-solid fa-pencil"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Paint -->
+
+                    <a href="shop.html" class="create-item">
+
+                        <div class="create-number">
+                            03
+                        </div>
+
+
+                        <div class="create-main">
+
+                            <span>
+                                COLOUR &amp; EXPRESSION
+                            </span>
+
+                            <h3>
+                                Paint
+                            </h3>
+
+                        </div>
+
+
+                        <div class="create-description">
+
+                            <p>
+                                Colours, brushes and surfaces
+                                made for creative expression.
+                            </p>
+
+                        </div>
+
+
+                        <div class="create-arrow">
+                            <i class="fa-solid fa-paintbrush"></i>
+                        </div>
+
+                    </a>
+
+
+
+                    <!-- Make -->
+
+                    <a href="shop.html" class="create-item">
+
+                        <div class="create-number">
+                            04
+                        </div>
+
+
+                        <div class="create-main">
+
+                            <span>
+                                HANDS &amp; MATERIALS
+                            </span>
+
+                            <h3>
+                                Make
+                            </h3>
+
+                        </div>
+
+
+                        <div class="create-description">
+
+                            <p>
+                                Craft materials and DIY essentials
+                                for things made by hand.
+                            </p>
+
+                        </div>
+
+
+                        <div class="create-arrow">
+                            <i class="fa-solid fa-scissors"></i>
+                        </div>
+
+                    </a>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - EVERYDAY DESK
+====================================================== -->
+
+        <section class="home-two-desk">
+
+            <div class="container">
+
+                <div class="desk-layout">
+
+
+                    <!-- LEFT CONTENT -->
+
+                    <div class="desk-content">
+
+                        <div class="desk-label">
+
+                            <span></span>
+
+                            EVERYDAY DESK
+
+                        </div>
+
+
+                        <h2>
+                            A better desk
+                            <em>starts here.</em>
+                        </h2>
+
+
+                        <p>
+                            The small essentials that keep your
+                            workspace organised, thoughtful and
+                            ready for whatever the day brings.
+                        </p>
+
+
+                        <a href="shop.html" class="desk-link">
+
+                            Shop Desk Essentials
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <!-- Mini Stats -->
+
+                        <div class="desk-stats">
+
+                            <div class="desk-stat">
+
+                                <strong>
+                                    120+
+                                </strong>
+
+                                <span>
+                                    Desk essentials
+                                </span>
+
+                            </div>
+
+
+                            <div class="desk-stat">
+
+                                <strong>
+                                    4.9
+                                </strong>
+
+                                <span>
+                                    Customer rating
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- RIGHT VISUAL -->
+
+                    <div class="desk-visual">
+
+                        <img src="images/everyday-desk.jpg" alt="Everyday desk stationery collection">
+
+
+                        <!-- Product Hotspot 01 -->
+
+                        <div class="desk-hotspot desk-hotspot-one">
+
+                            <span class="desk-hotspot-dot"></span>
+
+                            <div class="desk-hotspot-info">
+
+                                <small>
+                                    WRITING
+                                </small>
+
+                                <strong>
+                                    Signature Pen
+                                </strong>
+
+                                <span>
+                                    ₹ 249
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product Hotspot 02 -->
+
+                        <div class="desk-hotspot desk-hotspot-two">
+
+                            <span class="desk-hotspot-dot"></span>
+
+                            <div class="desk-hotspot-info">
+
+                                <small>
+                                    PAPER
+                                </small>
+
+                                <strong>
+                                    Linen Notebook
+                                </strong>
+
+                                <span>
+                                    ₹ 349
+                                </span>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- Product Hotspot 03 -->
+
+                        <div class="desk-hotspot desk-hotspot-three">
+
+                            <span class="desk-hotspot-dot"></span>
+
+                            <div class="desk-hotspot-info">
+
+                                <small>
+                                    DESK
+                                </small>
+
+                                <strong>
+                                    Wooden Organizer
+                                </strong>
+
+                                <span>
+                                    ₹ 499
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - PICKED FOR YOU
+====================================================== -->
+
+        <section class="home-two-picked">
+
+            <div class="container">
+
+                <div class="picked-heading">
+
+                    <div class="picked-label">
+                        <span></span>
+                        A FEW GOOD THINGS
+                    </div>
+
+                    <h2>
+                        Picked
+                        <em>for you.</em>
+                    </h2>
+
+                    <p>
+                        A small collection of everyday favourites,
+                        chosen for their quality, usefulness and
+                        ability to make ordinary moments better.
+                    </p>
+
+                </div>
+
+
+                <div class="picked-list">
+
+
+                    <!-- ITEM 01 -->
+
+                    <article class="picked-item">
+
+                        <div class="picked-number">
+                            01
+                        </div>
+
+                        <div class="picked-product-image">
+
+                            <img src="images/picked-product-1.png" alt="Premium notebook">
+
+                        </div>
+
+                        <div class="picked-product-info">
+
+                            <span>
+                                NOTEBOOKS
+                            </span>
+
+                            <h3>
+                                Classic Linen Journal
+                            </h3>
+
+                            <p>
+                                A timeless everyday notebook
+                                with a soft linen finish.
+                            </p>
+
+                        </div>
+
+                        <div class="picked-product-price">
+
+                            <strong>
+                                ₹349
+                            </strong>
+
+                            <a href="#">
+                                View
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ITEM 02 -->
+
+                    <article class="picked-item">
+
+                        <div class="picked-number">
+                            02
+                        </div>
+
+                        <div class="picked-product-image">
+
+                            <img src="images/picked-product-2.png" alt="Premium pen">
+
+                        </div>
+
+                        <div class="picked-product-info">
+
+                            <span>
+                                WRITING
+                            </span>
+
+                            <h3>
+                                Signature Gel Pen Set
+                            </h3>
+
+                            <p>
+                                Smooth, reliable writing tools
+                                for everyday notes and ideas.
+                            </p>
+
+                        </div>
+
+                        <div class="picked-product-price">
+
+                            <strong>
+                                ₹299
+                            </strong>
+
+                            <a href="#">
+                                View
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ITEM 03 -->
+
+                    <article class="picked-item">
+
+                        <div class="picked-number">
+                            03
+                        </div>
+
+                        <div class="picked-product-image">
+
+                            <img src="images/picked-product-3.png" alt="Watercolor palette">
+
+                        </div>
+
+                        <div class="picked-product-info">
+
+                            <span>
+                                ART
+                            </span>
+
+                            <h3>
+                                Artist Watercolor Palette
+                            </h3>
+
+                            <p>
+                                Rich colours for sketches,
+                                studies and creative experiments.
+                            </p>
+
+                        </div>
+
+                        <div class="picked-product-price">
+
+                            <strong>
+                                ₹499
+                            </strong>
+
+                            <a href="#">
+                                View
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- ITEM 04 -->
+
+                    <article class="picked-item">
+
+                        <div class="picked-number">
+                            04
+                        </div>
+
+                        <div class="picked-product-image">
+
+                            <img src="images/picked-product-4.png" alt="Craft essentials">
+
+                        </div>
+
+                        <div class="picked-product-info">
+
+                            <span>
+                                CRAFT
+                            </span>
+
+                            <h3>
+                                Creative Craft Essentials
+                            </h3>
+
+                            <p>
+                                A versatile collection for
+                                small projects and DIY ideas.
+                            </p>
+
+                        </div>
+
+                        <div class="picked-product-price">
+
+                            <strong>
+                                ₹449
+                            </strong>
+
+                            <a href="#">
+                                View
+                                <i class="fa-solid fa-arrow-up-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - SAVE MORE, CREATE MORE
+====================================================== -->
+
+        <section class="home-two-value">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="value-heading">
+
+                    <div class="value-label">
+
+                        <span></span>
+
+                        MORE VALUE, MORE CREATIVITY
+
+                    </div>
+
+                    <h2>
+                        Good things are
+                        <em>better together.</em>
+                    </h2>
+
+                    <p>
+                        Make everyday shopping easier with flexible
+                        options designed around the way you buy.
+                    </p>
+
+                </div>
+
+
+                <!-- Value Panels -->
+
+                <div class="value-panels">
+
+
+                    <!-- Panel 01 -->
+
+                    <div class="value-panel">
+
+                        <div class="value-panel-top">
+
+                            <span class="value-number">
+                                01
+                            </span>
+
+                            <i class="fa-solid fa-layer-group"></i>
+
+                        </div>
+
+                        <div class="value-panel-content">
+
+                            <span>
+                                BUY MORE
+                            </span>
+
+                            <h3>
+                                Quantity
+                                savings.
+                            </h3>
+
+                            <p>
+                                Stock up on everyday essentials
+                                and enjoy better value when you
+                                purchase every larger quantities with high price.
+                            </p>
+
+                        </div>
+
+                        <a href="shop.html" class="value-panel-link">
+
+                            Shop essentials
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Panel 02 -->
+
+                    <div class="value-panel value-panel-featured">
+
+                        <div class="value-panel-top">
+
+                            <span class="value-number">
+                                02
+                            </span>
+
+                            <i class="fa-solid fa-box-open"></i>
+
+                        </div>
+
+                        <div class="value-panel-content">
+
+                            <span>
+                                BUILD A BUNDLE
+                            </span>
+
+                            <h3>
+                                Create your
+                                own.
+                            </h3>
+
+                            <p>
+                                Bring your favourite writing,
+                                paper, craft, art things and creative essentials
+                                together in one thoughtful collection.
+                            </p>
+
+                        </div>
+
+                        <a href="shop.html" class="value-panel-link">
+
+                            Explore products
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Panel 03 -->
+
+                    <div class="value-panel">
+
+                        <div class="value-panel-top">
+
+                            <span class="value-number">
+                                03
+                            </span>
+
+                            <i class="fa-solid fa-users"></i>
+
+                        </div>
+
+                        <div class="value-panel-content">
+
+                            <span>
+                                FOR TEAMS
+                            </span>
+
+                            <h3>
+                                Create More, Save.
+                            </h3>
+
+                            <p>
+                                Schools, offices and organisations
+                                can enquire about quantity-based
+                                pricing for larger requirements.
+                            </p>
+
+                        </div>
+
+                        <a href="bulk-orders.html" class="value-panel-link">
+
+                            Bulk order enquiry
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     HOME 2 - CUSTOMER STORIES
+====================================================== -->
+
+        <section class="home-two-stories">
+
+            <div class="container">
+
+                <div class="stories-layout">
+
+
+                    <!-- LEFT -->
+
+                    <div class="stories-intro">
+
+                        <div class="stories-label">
+
+                            <span></span>
+
+                            FROM OUR CUSTOMERS
+
+                        </div>
+
+                        <h2>
+                            Good tools
+                            <em>leave an impression.</em>
+                        </h2>
+
+                        <p>
+                            From first sketches to everyday notes,
+                            here's what our customers have to say
+                            about the things they create with us.
+                        </p>
+
+                    </div>
+
+
+                    <!-- RIGHT TESTIMONIAL -->
+
+                    <div class="stories-testimonial">
+
+                        <div class="stories-quote-mark">
+                            “
+                        </div>
+
+                        <blockquote>
+                            Everything arrived beautifully packed,
+                            and the quality was even better than
+                            expected. Paper &amp; Palette has become
+                            my favourite place for everyday stationery.
+                        </blockquote>
+
+                        <div class="stories-author">
+
+                            <div class="stories-avatar">
+                                <img src="images/customer-1.jpg" alt="Customer">
+                            </div>
+
+                            <div>
+
+                                <strong>
+                                    Ananya Krishnan
+                                </strong>
+
+                                <span>
+                                    Verified Customer
+                                </span>
+
+                            </div>
+
+                        </div>
+
+                        <div class="stories-rating">
+
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+
+                            <span>
+                                5.0
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- SMALL REVIEWS -->
+
+                <div class="stories-mini-grid">
+
+                    <div class="stories-mini">
+
+                        <span class="stories-mini-number">
+                            01
+                        </span>
+
+                        <p>
+                            “Beautiful products, fast delivery
+                            and really thoughtful packaging.”
+                        </p>
+
+                        <strong>
+                            — Meera S.
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stories-mini">
+
+                        <span class="stories-mini-number">
+                            02
+                        </span>
+
+                        <p>
+                            “The notebooks and pens are now
+                            permanent of my desk.”
+                        </p>
+
+                        <strong>
+                            — Rahul P.
+                        </strong>
+
+                    </div>
+
+
+                    <div class="stories-mini">
+
+                        <span class="stories-mini-number">
+                            03
+                        </span>
+
+                        <p>
+                            “Great quality for the price.
+                            Will definitely order again.”
+                        </p>
+
+                        <strong>
+                            — Divya R.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     HOME 2 - FINAL CTA
+====================================================== -->
+
+        <section class="home-two-final-cta">
+
+            <div class="final-cta-overlay"></div>
+
+            <div class="container">
+
+                <div class="final-cta-content">
+
+
+                    <!-- Label -->
+
+                    <div class="final-cta-label">
+
+                        <span></span>
+
+                        START SOMETHING BEAUTIFUL
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- Heading -->
+
+                    <h2>
+                        Ideas begin
+                        <em>with the right tools.</em>
+                    </h2>
+
+
+                    <!-- Description -->
+
+                    <p>
+                        From everyday essentials to creative
+                        discoveries, find something worth making
+                        today.
+                    </p>
+
+
+                    <!-- Buttons -->
+
+                    <div class="final-cta-actions">
+
+                        <a href="shop.html" class="final-cta-primary">
+
+                            <span>
+                                Explore the Collection
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="contact.html" class="final-cta-secondary">
+
+                            <span>
+                                Get in Touch
+                            </span>
+
+                        </a>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- =========================================
+                 BRAND
+            ========================================== -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo-dark.png" class="logo-default" alt="Paper & Palette">
+
+                        <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+                    </a>
+
+                    <p>
+                        Discover quality stationery, art supplies,
+                        creative essentials and school-ready bundles
+                        designed to inspire every idea.
+                    </p>
+
+
+                    <!-- Social Links -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Pinterest" title="Pinterest">
+
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="YouTube" title="YouTube">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                 QUICK LINKS
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="school-deals.html">
+                                School Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 SHOP
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Shop
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="writing-supplies.html">
+                                Writing Supplies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="notebooks-sketchbooks.html">
+                                Notebooks &amp; Sketchbooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="art-painting.html">
+                                Art &amp; Painting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="craft-diy.html">
+                                Craft &amp; DIY
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="bulk-orders.html">
+                                Bulk Orders
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Get In Touch
+                    </h4>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <p>
+                            24 Creative Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <a href="mailto:hello@paperandpalette.com">
+                            hello@paperandpalette.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <p>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+             FOOTER BOTTOM
+        ========================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Paper &amp; Palette.
+                    All Rights Reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

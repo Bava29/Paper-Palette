@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body class="auth-page">
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) {}
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         AUTH TOP ACTIONS
+    ====================================================== -->
+
+    <div class="auth-topbar">
+
+        <div class="auth-actions">
+
+            <!-- Dark Mode -->
+
+            <button type="button" class="auth-toggle-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                title="Dark Mode">
+
+                <i class="fa-solid fa-moon"></i>
+
+            </button>
+
+
+            <!-- RTL -->
+
+            <button type="button" class="auth-toggle-btn" id="rtlToggle" aria-label="Toggle RTL Mode" title="RTL Mode">
+
+                <i class="fa-solid fa-right-left"></i>
+
+            </button>
+
+        </div>
+
+    </div>
+
+
+
+    <!-- =====================================================
+         REGISTER MAIN
+    ====================================================== -->
+
+    <main class="auth-main">
+
+        <div class="auth-card register-card">
+
+
+            <!-- Logo -->
+
+            <a href="index.html" class="auth-card-logo">
+
+                <img src="images/logo.png" class="auth-card-logo-default" alt="Paper & Palette">
+
+                <img src="images/logo-dark.png" class="auth-card-logo-light" alt="Paper & Palette">
+
+            </a>
+
+            <!-- Heading -->
+
+            <div class="auth-heading">
+
+                <span>
+                    CREATE ACCOUNT
+                </span>
+
+                <h1>
+                    Start <em>creating.</em>
+                </h1>
+
+                <p>
+                    Create your account and discover
+                    everything you need for your next idea.
+                </p>
+
+            </div>
+
+
+
+            <!-- Register Form -->
+
+            <form class="auth-form" action="#" method="post">
+
+
+                <!-- Full Name -->
+
+                <div class="auth-field">
+
+                    <label for="registerName">
+                        Full Name
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-regular fa-user"></i>
+
+                        <input type="text" id="registerName" name="name" placeholder="Enter your full name"
+                            autocomplete="name" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Email -->
+
+                <div class="auth-field">
+
+                    <label for="registerEmail">
+                        Email Address
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-regular fa-envelope"></i>
+
+                        <input type="email" id="registerEmail" name="email" placeholder="Enter your email"
+                            autocomplete="email" required>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Password -->
+
+                <div class="auth-field">
+
+                    <label for="registerPassword">
+                        Password
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="registerPassword" name="password" placeholder="Create a password"
+                            autocomplete="new-password" required>
+
+                        <button type="button" class="password-toggle" aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Confirm Password -->
+
+                <div class="auth-field">
+
+                    <label for="confirmPassword">
+                        Confirm Password
+                    </label>
+
+                    <div class="auth-input-wrap">
+
+                        <i class="fa-solid fa-lock"></i>
+
+                        <input type="password" id="confirmPassword" name="confirm_password"
+                            placeholder="Confirm your password" autocomplete="new-password" required>
+
+                        <button type="button" class="password-toggle" aria-label="Show password">
+
+                            <i class="fa-regular fa-eye"></i>
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Terms -->
+
+                <div class="auth-register-terms">
+
+                    <label>
+
+                        <input type="checkbox" name="terms" required>
+
+                        <span>
+                            I agree to the
+                            <a href="#">
+                                Terms &amp; Conditions
+                            </a>
+                        </span>
+
+                    </label>
+
+                </div>
+
+
+                <!-- Create Account -->
+
+                <button type="submit" class="auth-submit-btn">
+
+                    <span>
+                        Create Account
+                    </span>
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+
+
+            <!-- Divider -->
+
+            <div class="auth-divider">
+
+                <span></span>
+
+                <small>
+                    OR CONTINUE WITH
+                </small>
+
+                <span></span>
+
+            </div>
+
+
+
+            <!-- Social Login -->
+
+            <div class="auth-socials">
+
+                <!-- Google -->
+
+                <a href="#" class="auth-social-google" aria-label="Continue with Google">
+
+                    <img src="images/google-logo.svg" alt="Google">
+
+                </a>
+
+
+                <!-- Facebook -->
+
+                <a href="#" class="auth-social-facebook" aria-label="Continue with Facebook">
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                </a>
+
+
+                <!-- Apple -->
+
+                <a href="#" class="auth-social-apple" aria-label="Continue with Apple">
+
+                    <i class="fa-brands fa-apple"></i>
+
+                </a>
+
+            </div>
+
+
+
+            <!-- Login -->
+
+            <p class="auth-register">
+
+                Already have an account?
+
+                <a href="login.html">
+                    Login
+                </a>
+
+            </p>
+
+        </div>
+
+    </main>
+
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

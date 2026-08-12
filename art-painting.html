@@ -1,0 +1,1923 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) { }
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <a href="index.html" class="site-logo" aria-label="Paper & Palette Home">
+
+                    <img src="images/logo.png" class="logo-default" alt="Paper & Palette">
+
+                    <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+
+                </a>
+
+
+                <!-- =================================================
+                     MAIN NAVIGATION
+                ================================================== -->
+
+                <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+
+                        <!-- =========================
+                             HOME
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Home</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="index.html">
+                                        Home 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-2.html">
+                                        Home 2
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             ABOUT US
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="about.html" class="nav-link">
+
+                                About Us
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SHOP
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger active">
+
+                                <span>Shop</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown shop-dropdown">
+
+
+                                <!-- Writing Supplies -->
+
+                                <li>
+                                    <a href="writing-supplies.html">
+
+                                        Writing Supplies
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Notebooks -->
+
+                                <li>
+                                    <a href="notebooks-sketchbooks.html">
+
+                                        Notebooks &amp; Sketchbooks
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Art & Painting -->
+
+                                <li>
+                                    <a href="art-painting.html" class="active">
+
+                                        Art &amp; Painting
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Craft & DIY -->
+
+                                <li>
+                                    <a href="craft-diy.html">
+
+                                        Craft &amp; DIY
+
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SCHOOL DEALS
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="school-deals.html" class="nav-link">
+
+                                School Deals
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             CONTACT
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- =================================================
+                         MOBILE MENU ACTIONS
+                         These appear only inside hamburger menu
+                    ================================================== -->
+
+                    <div class="mobile-menu-actions">
+
+
+                        <!-- =========================
+                             DARK MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileThemeToggle">
+
+                            <span>
+
+                                <i class="fa-solid fa-moon action-icon"></i>
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right action-arrow"></i>
+
+                        </button>
+
+
+                        <!-- =========================
+                             RTL MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileRtlToggle">
+
+                            <span>
+                                <i class="fa-solid fa-right-left action-icon"></i>
+                            </span>
+
+                        </button>
+
+
+                        <!-- =========================
+                             LOGIN
+                        ========================== -->
+
+                        <a href="login.html" class="mobile-login-btn">
+
+                            <span>
+
+                                <i class="fa-regular fa-user action-icon"></i>
+
+                                <span>Login</span>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right action-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =========================
+                             BULK ORDERS
+                        ========================== -->
+
+                        <a href="bulk-orders.html" class="mobile-bulk-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+                </nav>
+
+
+                <!-- =================================================
+                     HEADER ACTIONS
+                     Desktop only
+                ================================================== -->
+
+                <div class="navbar-actions">
+
+
+                    <!-- Desktop Actions -->
+
+                    <div class="desktop-actions">
+
+
+                        <!-- Dark Mode -->
+
+                        <button type="button" class="nav-icon-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                            title="Dark Mode">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+
+                        <!-- RTL -->
+
+                        <button type="button" class="nav-icon-btn" id="rtlToggle" aria-label="Toggle RTL Mode"
+                            title="RTL Mode">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+
+                        <!-- Login -->
+
+                        <a href="login.html" class="login-btn">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>
+                                Login
+                            </span>
+
+                        </a>
+
+
+                        <!-- Bulk Orders -->
+
+                        <a href="bulk-orders.html" class="bulk-orders-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu"
+                        aria-expanded="false">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+     ART & PAINTING PAGE — HERO
+====================================================== -->
+
+
+        <section class="shop-hero">
+
+
+            <div class="shop-hero-bg">
+
+
+                <img src="images/ap-hero.jpg" alt="Art and painting supplies collection">
+
+
+            </div>
+
+
+
+            <div class="shop-hero-overlay"></div>
+
+
+
+            <div class="container">
+
+
+                <div class="shop-hero-content">
+
+
+                    <span class="shop-hero-label">
+                        ART & PAINTING
+                    </span>
+
+
+                    <h1>
+                        Bring your ideas
+                        <span>to colour.</span>
+                    </h1>
+
+
+
+                    <p>
+                        Explore a carefully selected collection of
+                        paints, brushes, colours and creative essentials
+                        made for artists and learners
+                    </p>
+
+
+
+                    <div class="shop-hero-buttons">
+
+
+                        <a href="#art-supplies" class="shop-hero-btn shop-hero-btn-primary">
+
+
+                            Explore Art Supplies
+
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+
+                        </a>
+
+
+
+                        <a href="#painting" class="shop-hero-btn shop-hero-btn-secondary">
+
+
+                            View Painting Supplies
+
+
+                        </a>
+
+
+                    </div>
+
+
+
+                </div>
+
+
+            </div>
+
+
+
+            <!-- Scroll Indicator -->
+
+
+            <div class="shop-hero-scroll">
+
+
+                <span>
+                    EXPLORE THE COLLECTION
+                </span>
+
+
+                <i class="fa-solid fa-arrow-down"></i>
+
+
+            </div>
+
+
+
+        </section>
+
+
+        <!-- =====================================================
+     ART & PAINTING — FEATURED COLLECTION
+====================================================== -->
+
+        <section class="shop-featured-section">
+
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="shop-section-heading">
+
+
+                    <div>
+
+                        <span class="shop-section-label">
+                            ART & PAINTING COLLECTION
+                        </span>
+
+
+                        <h2>
+                            Colours made for
+                            <em>creative minds.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <a href="#" class="shop-view-all">
+
+                        View All Art Supplies
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </a>
+
+
+                </div>
+
+
+
+                <!-- Product Grid -->
+
+                <div class="shop-featured-grid">
+
+
+                    <!-- Product 01 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                BESTSELLER
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/a1.jpg" alt="Watercolour painting set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                WATERCOLOURS
+                            </span>
+
+
+                            <h3>
+                                Watercolour Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹280
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 02 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge shop-product-new">
+                                NEW
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/a2.jpg" alt="Acrylic paint set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                PAINTS
+                            </span>
+
+
+                            <h3>
+                                Acrylic Paint Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹420
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 03 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                POPULAR
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/a3.jpg" alt="Artist paint brush set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                BRUSHES
+                            </span>
+
+
+                            <h3>
+                                Artist Brush Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹320
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Product 04 -->
+
+                    <article class="shop-product-card">
+
+
+                        <div class="shop-product-image">
+
+
+                            <span class="shop-product-badge">
+                                CREATIVE PICK
+                            </span>
+
+
+                            <button type="button" class="shop-product-wishlist" aria-label="Add to wishlist">
+
+                                <i class="fa-regular fa-heart"></i>
+
+                            </button>
+
+
+                            <img src="images/a4.jpg" alt="Artist colour pencil set">
+
+
+                        </div>
+
+
+
+                        <div class="shop-product-content">
+
+
+                            <span class="shop-product-category">
+                                COLOURING
+                            </span>
+
+
+                            <h3>
+                                Colour Pencil Set
+                            </h3>
+
+
+                            <div class="shop-product-meta">
+
+
+                                <strong>
+                                    ₹240
+                                </strong>
+
+
+                                <a href="product-details.html">
+
+                                    View Product
+
+                                    <i class="fa-solid fa-arrow-right"></i>
+
+                                </a>
+
+
+                            </div>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!-- =====================================================
+     ART & PAINTING — COLLECTION
+====================================================== -->
+
+        <section class="shop-stationery-section" id="art-supplies">
+
+
+            <div class="container">
+
+
+                <div class="shop-stationery-layout">
+
+
+                    <!-- Left Visual -->
+
+                    <div class="shop-stationery-visual">
+
+
+                        <img src="images/art-painting-collection.jpg" alt="Art and painting supplies collection">
+
+
+                        <div class="shop-stationery-visual-label">
+
+
+                            <span>
+                                DRAW • COLOUR • PAINT
+                            </span>
+
+
+                            <strong>
+                                01
+                            </strong>
+
+
+                        </div>
+
+
+                    </div>
+
+
+
+                    <!-- Right Content -->
+
+                    <div class="shop-stationery-content">
+
+
+                        <span class="shop-section-label">
+                            ART & PAINTING
+                        </span>
+
+
+                        <h2>
+                            Colour every
+                            <em>creative idea.</em>
+                        </h2>
+
+
+                        <p>
+                            Explore paints, brushes, colours and drawing
+                            essentials carefully selected for beginners,
+                            students and creative minds ready to bring
+                            their ideas to life.
+                        </p>
+
+
+
+                        <!-- Categories -->
+
+                        <div class="shop-stationery-categories">
+
+
+                            <!-- Category 01 -->
+
+                            <a href="art-painting.html?category=drawing">
+
+
+                                <span class="shop-stationery-number">
+                                    01
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Drawing Essentials
+                                    </strong>
+
+                                    <small>
+                                        Pencils, sketching & drawing tools
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 02 -->
+
+                            <a href="art-painting.html?category=watercolour">
+
+
+                                <span class="shop-stationery-number">
+                                    02
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Watercolours
+                                    </strong>
+
+                                    <small>
+                                        Colours for soft & vibrant artwork
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 03 -->
+
+                            <a href="art-painting.html?category=acrylic">
+
+
+                                <span class="shop-stationery-number">
+                                    03
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Acrylic Paints
+                                    </strong>
+
+                                    <small>
+                                        Rich colours for creative projects
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+
+                            <!-- Category 04 -->
+
+                            <a href="art-painting.html?category=brushes">
+
+
+                                <span class="shop-stationery-number">
+                                    04
+                                </span>
+
+
+                                <div>
+
+                                    <strong>
+                                        Brushes & Tools
+                                    </strong>
+
+                                    <small>
+                                        Painting brushes & creative tools
+                                    </small>
+
+                                </div>
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+
+                        <!-- CTA -->
+
+                        <a href="art-painting.html" class="shop-stationery-button">
+
+
+                            Explore All Art Supplies
+
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+
+                        </a>
+
+
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+        <!-- =====================================================
+     ART & PAINTING — CREATIVE COLLECTION
+====================================================== -->
+
+        <section class="shop-art-section" id="painting">
+
+
+            <div class="container">
+
+
+                <div class="shop-art-layout">
+
+
+                    <!-- LEFT CONTENT -->
+
+                    <div class="shop-art-content">
+
+
+                        <span class="shop-section-label">
+                            ART & PAINTING COLLECTION
+                        </span>
+
+
+                        <h2>
+                            Bring colour
+                            <em>to every idea.</em>
+                        </h2>
+
+
+                        <p>
+                            Explore a versatile collection of paints,
+                            brushes, colours and creative tools designed
+                            for expressive artwork, learning, practice
+                            and projects of every kind.
+                        </p>
+
+
+                        <div class="shop-art-stats">
+
+
+                            <div>
+
+                                <strong>
+                                    100+
+                                </strong>
+
+                                <span>
+                                    Art essentials
+                                </span>
+
+                            </div>
+
+
+                            <div>
+
+                                <strong>
+                                    04
+                                </strong>
+
+                                <span>
+                                    Creative categories
+                                </span>
+
+                            </div>
+
+
+                        </div>
+
+
+                        <a href="art-painting.html" class="shop-art-button">
+
+                            Explore Art Collection
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+
+
+                    <!-- RIGHT VISUAL -->
+
+                    <div class="shop-art-visual">
+
+
+                        <div class="shop-art-main-image">
+
+
+                            <img src="images/art-painting-creative.jpg" alt="Art and painting creative collection">
+
+
+                        </div>
+
+
+                        <div class="shop-art-floating-card">
+
+
+                            <span>
+                                CREATIVE ESSENTIALS
+                            </span>
+
+
+                            <strong>
+                                Draw.
+                                Paint.
+                                Create.
+                            </strong>
+
+
+                            <i class="fa-solid fa-palette"></i>
+
+
+                        </div>
+
+
+                        <div class="shop-art-number">
+                            02
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                <!-- ART CATEGORY STRIP -->
+
+                <div class="shop-art-categories">
+
+
+                    <!-- 01 -->
+
+                    <a href="art-painting.html?category=drawing">
+
+
+                        <span>
+                            01
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-pencil"></i>
+
+                            <strong>
+                                Drawing
+                            </strong>
+
+                            <small>
+                                Pencils & sketching tools
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 02 -->
+
+                    <a href="art-painting.html?category=watercolour">
+
+
+                        <span>
+                            02
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-droplet"></i>
+
+                            <strong>
+                                Watercolours
+                            </strong>
+
+                            <small>
+                                Soft colours & painting sets
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 03 -->
+
+                    <a href="art-painting.html?category=acrylic">
+
+
+                        <span>
+                            03
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-palette"></i>
+
+                            <strong>
+                                Acrylic Paints
+                            </strong>
+
+                            <small>
+                                Rich colours for artwork
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+
+                    <!-- 04 -->
+
+                    <a href="art-painting.html?category=brushes">
+
+
+                        <span>
+                            04
+                        </span>
+
+
+                        <div>
+
+                            <i class="fa-solid fa-brush"></i>
+
+                            <strong>
+                                Brushes & Tools
+                            </strong>
+
+                            <small>
+                                Painting brushes & essentials
+                            </small>
+
+                        </div>
+
+
+                        <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+        <!-- =====================================================
+     ART & PAINTING — SPECIAL OFFERS
+====================================================== -->
+
+        <section class="shop-offers-section">
+
+
+            <div class="container">
+
+
+                <!-- Heading -->
+
+                <div class="shop-offers-heading">
+
+
+                    <div>
+
+                        <span class="shop-section-label">
+                            ART & PAINTING OFFERS
+                        </span>
+
+
+                        <h2>
+                            More colour.
+                            <em>Better value.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <p>
+                        Discover special prices on selected paints,
+                        brushes and colouring essentials made for
+                        creative projects, practice and everyday art.
+                    </p>
+
+
+                </div>
+
+
+
+                <!-- Offers -->
+
+                <div class="shop-offers-grid">
+
+
+                    <!-- Offer 01 -->
+
+                    <article class="shop-offer-card">
+
+
+                        <div class="shop-offer-image">
+
+
+                            <span class="shop-offer-discount">
+                                20% OFF
+                            </span>
+
+
+                            <img src="images/a1.jpg" alt="Watercolour painting set offer">
+
+
+                        </div>
+
+
+
+                        <div class="shop-offer-content">
+
+
+                            <span class="shop-offer-category">
+                                WATERCOLOURS
+                            </span>
+
+
+                            <h3>
+                                Artist Watercolour Set
+                            </h3>
+
+
+                            <p>
+                                A versatile colour set for soft washes,
+                                detailed artwork and creative practice.
+                            </p>
+
+
+
+                            <div class="shop-offer-price">
+
+
+                                <strong>
+                                    ₹280
+                                </strong>
+
+
+                                <del>
+                                    ₹350
+                                </del>
+
+
+                                <span>
+                                    Save ₹70
+                                </span>
+
+
+                            </div>
+
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+
+                                Shop Now
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Offer 02 -->
+
+                    <article class="shop-offer-card">
+
+
+                        <div class="shop-offer-image">
+
+
+                            <span class="shop-offer-discount">
+                                15% OFF
+                            </span>
+
+
+                            <img src="images/a2.jpg" alt="Acrylic paint set offer">
+
+
+                        </div>
+
+
+
+                        <div class="shop-offer-content">
+
+
+                            <span class="shop-offer-category">
+                                ACRYLIC PAINTS
+                            </span>
+
+
+                            <h3>
+                                Premium Acrylic Paint Set
+                            </h3>
+
+
+                            <p>
+                                Rich, versatile colours for canvas work,
+                                creative projects and expressive artwork.
+                            </p>
+
+
+
+                            <div class="shop-offer-price">
+
+
+                                <strong>
+                                    ₹425
+                                </strong>
+
+
+                                <del>
+                                    ₹500
+                                </del>
+
+
+                                <span>
+                                    Save ₹75
+                                </span>
+
+
+                            </div>
+
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+
+                                Shop Now
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+
+                    <!-- Offer 03 -->
+
+                    <article class="shop-offer-card">
+
+
+                        <div class="shop-offer-image">
+
+
+                            <span class="shop-offer-discount">
+                                25% OFF
+                            </span>
+
+
+                            <img src="images/a3.jpg" alt="Artist brush set offer">
+
+
+                        </div>
+
+
+
+                        <div class="shop-offer-content">
+
+
+                            <span class="shop-offer-category">
+                                BRUSHES & TOOLS
+                            </span>
+
+
+                            <h3>
+                                Professional Brush Set
+                            </h3>
+
+
+                            <p>
+                                A practical brush collection for detailed
+                                strokes, broad washes and techniques.
+                            </p>
+
+
+
+                            <div class="shop-offer-price">
+
+
+                                <strong>
+                                    ₹300
+                                </strong>
+
+
+                                <del>
+                                    ₹400
+                                </del>
+
+
+                                <span>
+                                    Save ₹100
+                                </span>
+
+
+                            </div>
+
+
+
+                            <a href="product-details.html" class="shop-offer-button">
+
+
+                                Shop Now
+
+
+                                <i class="fa-solid fa-arrow-right"></i>
+
+
+                            </a>
+
+
+                        </div>
+
+
+                    </article>
+
+
+                </div>
+
+
+
+                <!-- Bottom CTA -->
+
+                <div class="shop-offers-bottom">
+
+
+                    <div>
+
+
+                        <span>
+                            KEEP CREATING
+                        </span>
+
+
+                        <strong>
+                            Find the colours and tools for your next artwork.
+                        </strong>
+
+
+                    </div>
+
+
+
+                    <a href="art-painting.html" class="shop-offers-all-button">
+
+
+                        View All Art Supplies
+
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+
+                    </a>
+
+
+                </div>
+
+
+            </div>
+
+
+        </section>
+
+
+
+
+    </main>
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- =========================================
+                 BRAND
+            ========================================== -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo-dark.png" class="logo-default" alt="Paper & Palette">
+
+                        <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+                    </a>
+
+                    <p>
+                        Discover quality stationery, art supplies,
+                        creative essentials and school-ready bundles
+                        designed to inspire every idea.
+                    </p>
+
+
+                    <!-- Social Links -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Pinterest" title="Pinterest">
+
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="YouTube" title="YouTube">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                 QUICK LINKS
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="school-deals.html">
+                                School Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 SHOP
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Shop
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="writing-supplies.html">
+                                Writing Supplies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="notebooks-sketchbooks.html">
+                                Notebooks &amp; Sketchbooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="art-painting.html">
+                                Art &amp; Painting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="craft-diy.html">
+                                Craft &amp; DIY
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="bulk-orders.html">
+                                Bulk Orders
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Get In Touch
+                    </h4>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <p>
+                            24 Creative Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <a href="mailto:hello@paperandpalette.com">
+                            hello@paperandpalette.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <p>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+             FOOTER BOTTOM
+        ========================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Paper &amp; Palette.
+                    All Rights Reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>

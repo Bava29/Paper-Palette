@@ -1,0 +1,1719 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Paper & Palette</title>
+
+    <!-- SEO -->
+    <meta name="description"
+        content="Paper & Palette - Shop premium stationery, notebooks, sketchbooks, art supplies, painting materials, and craft kits.">
+    <meta name="keywords"
+        content="stationery, art supplies, notebooks, sketchbooks, painting supplies, craft kits, school supplies">
+    <meta name="author" content="Paper & Palette">
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/logo.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <script>
+        (function () {
+            try {
+                if (localStorage.getItem("paperPaletteTheme") === "dark") {
+                    document.body.classList.add("dark-mode");
+                }
+                document.body.classList.add("js-anim-ready");
+            } catch (error) { }
+        })();
+    </script>
+
+
+    <!-- =====================================================
+         HEADER
+    ====================================================== -->
+
+    <header class="site-header">
+
+        <div class="container">
+
+            <div class="navbar">
+
+
+                <!-- =================================================
+                     LOGO
+                ================================================== -->
+
+                <a href="index.html" class="site-logo" aria-label="Paper & Palette Home">
+
+                    <img src="images/logo.png" class="logo-default" alt="Paper & Palette">
+
+                    <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+
+                </a>
+
+
+                <!-- =================================================
+                     MAIN NAVIGATION
+                ================================================== -->
+
+                <nav class="main-nav" id="mainNav" aria-label="Main Navigation">
+
+                    <ul class="nav-list">
+
+
+                        <!-- =========================
+                             HOME
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Home</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown">
+
+                                <li>
+                                    <a href="index.html">
+                                        Home 1
+                                    </a>
+                                </li>
+
+                                <li>
+                                    <a href="home-2.html">
+                                        Home 2
+                                    </a>
+                                </li>
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             ABOUT US
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="about.html" class="nav-link active">
+
+                                About Us
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SHOP
+                        ========================== -->
+
+                        <li class="nav-item has-dropdown">
+
+                            <a href="#" class="nav-link dropdown-trigger">
+
+                                <span>Shop</span>
+
+                                <i class="fa-solid fa-chevron-down dropdown-icon"></i>
+
+                            </a>
+
+
+                            <ul class="nav-dropdown shop-dropdown">
+
+
+                                <!-- Writing Supplies -->
+
+                                <li>
+                                    <a href="writing-supplies.html">
+
+                                        Writing Supplies
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Notebooks -->
+
+                                <li>
+                                    <a href="notebooks-sketchbooks.html">
+
+                                        Notebooks &amp; Sketchbooks
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Art & Painting -->
+
+                                <li>
+                                    <a href="art-painting.html">
+
+                                        Art &amp; Painting
+
+                                    </a>
+                                </li>
+
+
+                                <!-- Craft & DIY -->
+
+                                <li>
+                                    <a href="craft-diy.html">
+
+                                        Craft &amp; DIY
+
+                                    </a>
+                                </li>
+
+
+                            </ul>
+
+                        </li>
+
+
+                        <!-- =========================
+                             SCHOOL DEALS
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="school-deals.html" class="nav-link">
+
+                                School Deals
+
+                            </a>
+
+                        </li>
+
+
+                        <!-- =========================
+                             CONTACT
+                        ========================== -->
+
+                        <li class="nav-item">
+
+                            <a href="contact.html" class="nav-link">
+
+                                Contact
+
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+
+                    <!-- =================================================
+                         MOBILE MENU ACTIONS
+                         These appear only inside hamburger menu
+                    ================================================== -->
+
+                    <div class="mobile-menu-actions">
+
+
+                        <!-- =========================
+                             DARK MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileThemeToggle">
+
+                            <span>
+
+                                <i class="fa-solid fa-moon action-icon"></i>
+
+                            </span>
+
+                            <i class="fa-solid fa-chevron-right action-arrow"></i>
+
+                        </button>
+
+
+                        <!-- =========================
+                             RTL MODE
+                        ========================== -->
+
+                        <button type="button" class="mobile-action-btn" id="mobileRtlToggle">
+
+                            <span>
+                                <i class="fa-solid fa-right-left action-icon"></i>
+                            </span>
+
+                        </button>
+
+
+                        <!-- =========================
+                             LOGIN
+                        ========================== -->
+
+                        <a href="login.html" class="mobile-login-btn">
+
+                            <span>
+
+                                <i class="fa-regular fa-user action-icon"></i>
+
+                                <span>Login</span>
+
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right action-arrow"></i>
+
+                        </a>
+
+
+                        <!-- =========================
+                             BULK ORDERS
+                        ========================== -->
+
+                        <a href="bulk-orders.html" class="mobile-bulk-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                    </div>
+
+                </nav>
+
+
+                <!-- =================================================
+                     HEADER ACTIONS
+                     Desktop only
+                ================================================== -->
+
+                <div class="navbar-actions">
+
+
+                    <!-- Desktop Actions -->
+
+                    <div class="desktop-actions">
+
+
+                        <!-- Dark Mode -->
+
+                        <button type="button" class="nav-icon-btn" id="themeToggle" aria-label="Toggle Dark Mode"
+                            title="Dark Mode">
+
+                            <i class="fa-solid fa-moon"></i>
+
+                        </button>
+
+
+                        <!-- RTL -->
+
+                        <button type="button" class="nav-icon-btn" id="rtlToggle" aria-label="Toggle RTL Mode"
+                            title="RTL Mode">
+
+                            <i class="fa-solid fa-right-left"></i>
+
+                        </button>
+
+
+                        <!-- Login -->
+
+                        <a href="login.html" class="login-btn">
+
+                            <i class="fa-regular fa-user"></i>
+
+                            <span>
+                                Login
+                            </span>
+
+                        </a>
+
+
+                        <!-- Bulk Orders -->
+
+                        <a href="bulk-orders.html" class="bulk-orders-btn">
+
+                            <span>
+                                Bulk Orders
+                            </span>
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- =================================================
+                         MOBILE MENU TOGGLE
+                    ================================================== -->
+
+                    <button type="button" class="menu-toggle" id="menuToggle" aria-label="Open Menu"
+                        aria-expanded="false">
+
+                        <span></span>
+                        <span></span>
+                        <span></span>
+
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+    <main>
+
+
+        <!-- =====================================================
+     INNER PAGE HERO
+====================================================== -->
+
+        <section class="inner-page-hero about-page-hero">
+
+            <div class="container">
+
+                <div class="inner-page-hero-content">
+
+                    <div class="inner-page-hero-label">
+
+                        <span></span>
+
+                        ABOUT PAPER & PALETTE
+
+                        <span></span>
+
+                    </div>
+
+                    <h1>
+                        Made for people who
+
+                        <em>love to create.</em>
+                    </h1>
+
+                    <p>
+                        Thoughtfully selected stationery, art supplies and
+                        creative essentials for ideas big, small and everything
+                        in between.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     ABOUT US - OUR STORY
+====================================================== -->
+
+        <section class="about-story-section">
+
+            <div class="container">
+
+                <div class="about-story-layout">
+
+
+                    <!-- LEFT SIDE -->
+
+                    <div class="about-story-intro">
+
+                        <div class="about-story-label">
+
+                            <span></span>
+
+                            OUR STORY
+
+                        </div>
+
+
+                        <h2>
+                            More than stationery,
+                            <em>a place to begin.</em>
+                        </h2>
+
+                    </div>
+
+
+                    <!-- RIGHT SIDE -->
+
+                    <div class="about-story-content">
+
+                        <p class="about-story-lead">
+
+                            Paper &amp; Palette was created for people
+                            who believe that the right tools can make
+                            everyday ideas feel a little more special.
+
+                        </p>
+
+
+                        <p>
+
+                            From a simple notebook filled with thoughts
+                            to a blank sheet waiting for its first sketch,
+                            we believe creativity often starts with
+                            something small.
+
+                        </p>
+
+
+                        <p>
+
+                            That's why we carefully bring together
+                            stationery, art supplies and creative
+                            essentials that are beautiful, practical
+                            and made to be enjoyed every day.
+
+                        </p>
+
+
+                        <div class="about-story-signature">
+
+                            <span>
+                                PAPER &amp; PALETTE
+                            </span>
+
+                            <strong>
+                                Thoughtfully chosen. Made to inspire.
+                            </strong>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- STORY IMAGE -->
+
+                <div class="about-story-image">
+
+                    <img src="images/about-story.jpg" alt="Paper and Palette creative workspace">
+
+                    <div class="about-story-image-caption">
+
+                        <span>
+                            SINCE 2020
+                        </span>
+
+                        <strong>
+                            Created with curiosity.
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     ABOUT US - VISION & MISSION PARALLAX
+====================================================== -->
+
+        <section class="about-vm-parallax">
+
+            <div class="about-vm-bg"></div>
+
+            <div class="about-vm-overlay"></div>
+
+            <div class="container">
+
+                <div class="about-vm-content">
+
+
+                    <!-- Section Label -->
+
+                    <div class="about-vm-label">
+
+                        <span></span>
+
+                        OUR DIRECTION
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- Vision -->
+
+                    <div class="about-vm-block about-vm-vision">
+
+                        <small>
+                            OUR VISION
+                        </small>
+
+                        <h2>
+                            Make creativity
+                            <em>feel accessible.</em>
+                        </h2>
+
+                        <p>
+                            We envision a world where everyone can
+                            find the confidence, inspiration and right
+                            tools to turn simple ideas into something
+                            meaningful.
+                        </p>
+
+                    </div>
+
+
+                    <!-- Divider -->
+
+                    <div class="about-vm-divider">
+
+                        <span></span>
+
+                        <i class="fa-solid fa-plus"></i>
+
+                        <span></span>
+
+                    </div>
+
+
+                    <!-- Mission -->
+
+                    <div class="about-vm-block about-vm-mission">
+
+                        <small>
+                            OUR MISSION
+                        </small>
+
+                        <h2>
+                            Bring better tools
+                            <em>to everyday ideas.</em>
+                        </h2>
+
+                        <p>
+                            We carefully curate stationery, art and
+                            creative essentials that combine quality,
+                            usefulness and thoughtful design for
+                            everyday creators.
+                        </p>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     ABOUT US - OUR JOURNEY
+====================================================== -->
+
+        <section class="about-journey-section">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="about-journey-heading">
+
+                    <div class="about-journey-label">
+
+                        <span></span>
+
+                        OUR JOURNEY
+
+                        <span></span>
+
+                    </div>
+
+                    <h2>
+                        From a simple idea
+                        <em>to a creative community.</em>
+                    </h2>
+
+                    <p>
+                        Every chapter has shaped what Paper &amp; Palette
+                        is today — and where we're heading next.
+                    </p>
+
+                </div>
+
+
+                <!-- Journey Timeline -->
+
+                <div class="about-journey-timeline">
+
+
+                    <!-- 2020 -->
+
+                    <div class="about-journey-item">
+
+                        <div class="about-journey-year">
+                            2020
+                        </div>
+
+                        <div class="about-journey-dot"></div>
+
+                        <div class="about-journey-content">
+
+                            <span>
+                                THE BEGINNING
+                            </span>
+
+                            <h3>
+                                A small idea takes shape.
+                            </h3>
+
+                            <p>
+                                Paper &amp; Palette began with a simple
+                                thought — finding stationery and creative
+                                tools should feel inspiring, not overwhelming.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2021 -->
+
+                    <div class="about-journey-item">
+
+                        <div class="about-journey-year">
+                            2021
+                        </div>
+
+                        <div class="about-journey-dot"></div>
+
+                        <div class="about-journey-content">
+
+                            <span>
+                                FIRST COLLECTION
+                            </span>
+
+                            <h3>
+                                Our first creative collection.
+                            </h3>
+
+                            <p>
+                                We brought together our first selection
+                                of thoughtfully chosen stationery and
+                                everyday creative essentials.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2023 -->
+
+                    <div class="about-journey-item">
+
+                        <div class="about-journey-year">
+                            2023
+                        </div>
+
+                        <div class="about-journey-dot"></div>
+
+                        <div class="about-journey-content">
+
+                            <span>
+                                GROWING THE PALETTE
+                            </span>
+
+                            <h3>
+                                More ways to create.
+                            </h3>
+
+                            <p>
+                                Our collection expanded into art supplies,
+                                creative tools and products from brands
+                                we genuinely believe in.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2025 -->
+
+                    <div class="about-journey-item">
+
+                        <div class="about-journey-year">
+                            2025
+                        </div>
+
+                        <div class="about-journey-dot"></div>
+
+                        <div class="about-journey-content">
+
+                            <span>
+                                OUR COMMUNITY
+                            </span>
+
+                            <h3>
+                                10K+ customers and counting.
+                            </h3>
+
+                            <p>
+                                What started as a small idea became a
+                                growing community of students, creators,
+                                professionals and stationery lovers.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 2026 -->
+
+                    <div class="about-journey-item">
+
+                        <div class="about-journey-year">
+                            2026
+                        </div>
+
+                        <div class="about-journey-dot"></div>
+
+                        <div class="about-journey-content">
+
+                            <span>
+                                WHAT'S NEXT
+                            </span>
+
+                            <h3>
+                                Building the next chapter.
+                            </h3>
+
+                            <p>
+                                We're continuing to discover better
+                                products, support more creators and
+                                make everyday creativity easier to explore.
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+
+                <!-- Bottom Statement -->
+
+                <div class="about-journey-bottom">
+
+                    <span>
+                        THE STORY CONTINUES
+                    </span>
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     ABOUT US - OUR NUMBERS
+====================================================== -->
+
+        <section class="about-numbers-section">
+
+            <div class="container">
+
+                <div class="about-numbers-heading">
+
+                    <div class="about-numbers-label">
+
+                        <span></span>
+
+                        OUR NUMBERS
+
+                        <span></span>
+
+                    </div>
+
+                    <h2>
+                        Small beginnings,
+                        <em>meaningful growth.</em>
+                    </h2>
+
+                    <p>
+                        What started with a love for thoughtfully chosen
+                        creative essentials has grown into a community
+                        of people who love to make, write and create.
+                    </p>
+
+                </div>
+
+
+                <div class="about-numbers-grid">
+
+
+                    <!-- STAT 01 -->
+
+                    <div class="about-number-item">
+
+                        <span class="about-number-index">
+                            01
+                        </span>
+
+                        <strong>
+                            10K+
+                        </strong>
+
+                        <h3>
+                            Happy Customers
+                        </h3>
+
+                        <p>
+                            Creators, students and everyday stationery
+                            lovers who choose Paper &amp; Palette.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STAT 02 -->
+
+                    <div class="about-number-item">
+
+                        <span class="about-number-index">
+                            02
+                        </span>
+
+                        <strong>
+                            500+
+                        </strong>
+
+                        <h3>
+                            Creative Products
+                        </h3>
+
+                        <p>
+                            Carefully selected stationery, art supplies
+                            and more creative essentials.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STAT 03 -->
+
+                    <div class="about-number-item">
+
+                        <span class="about-number-index">
+                            25+
+                        </span>
+
+                        <strong>
+                            25+
+                        </strong>
+
+                        <h3>
+                            Creative Brands
+                        </h3>
+
+                        <p>
+                            A growing collection of brands chosen for
+                            quality, design and everyday usefulness.
+                        </p>
+
+                    </div>
+
+
+                    <!-- STAT 04 -->
+
+                    <div class="about-number-item">
+
+                        <span class="about-number-index">
+                            04
+                        </span>
+
+                        <strong>
+                            4.9
+                        </strong>
+
+                        <h3>
+                            Customer Rating
+                        </h3>
+
+                        <p>
+                            Loved for thoughtful products, reliable
+                            service and a simple shopping experience.
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="about-numbers-bottom">
+
+                    <span>
+                        GROWING WITH EVERY IDEA
+                    </span>
+
+                    <i class="fa-solid fa-arrow-down"></i>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================================
+     ABOUT US - MEET THE TEAM
+====================================================== -->
+
+        <section class="about-team-section">
+
+            <div class="container">
+
+                <!-- Heading -->
+
+                <div class="about-team-heading">
+
+                    <div class="about-team-label">
+
+                        <span></span>
+
+                        MEET THE TEAM
+
+                        <span></span>
+
+                    </div>
+
+                    <h2>
+                        The people behind
+                        <em>the palette.</em>
+                    </h2>
+
+                    <p>
+                        A small team with a shared love for thoughtful
+                        products, creative ideas and making everyday
+                        shopping feel a little more personal.
+                    </p>
+
+                </div>
+
+
+                <!-- Team -->
+
+                <div class="about-team-grid">
+
+
+                    <!-- Member 01 -->
+
+                    <article class="about-team-member">
+
+                        <div class="about-team-photo">
+
+                            <img src="images/team-1.jpg" alt="Creative Director">
+
+                            <span class="about-team-number">
+                                01
+                            </span>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <div>
+
+                                <h3>
+                                    Ananya Krishnan
+                                </h3>
+
+                                <span>
+                                    Creative Director
+                                </span>
+
+                            </div>
+
+                            <a href="#" aria-label="Ananya Krishnan LinkedIn">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Member 02 -->
+
+                    <article class="about-team-member">
+
+                        <div class="about-team-photo">
+
+                            <img src="images/team-2.jpg" alt="Brand Manager">
+
+                            <span class="about-team-number">
+                                02
+                            </span>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <div>
+
+                                <h3>
+                                    Rohan Mehta
+                                </h3>
+
+                                <span>
+                                    Brand Manager
+                                </span>
+
+                            </div>
+
+                            <a href="#" aria-label="Rohan Mehta LinkedIn">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Member 03 -->
+
+                    <article class="about-team-member">
+
+                        <div class="about-team-photo">
+
+                            <img src="images/team-3.jpg" alt="Product Curator">
+
+                            <span class="about-team-number">
+                                03
+                            </span>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <div>
+
+                                <h3>
+                                    Meera Shah
+                                </h3>
+
+                                <span>
+                                    Product Curator
+                                </span>
+
+                            </div>
+
+                            <a href="#" aria-label="Meera Shah LinkedIn">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- Member 04 -->
+
+                    <article class="about-team-member">
+
+                        <div class="about-team-photo">
+
+                            <img src="images/team-4.jpg" alt="Customer Experience Lead">
+
+                            <span class="about-team-number">
+                                04
+                            </span>
+
+                        </div>
+
+                        <div class="about-team-info">
+
+                            <div>
+
+                                <h3>
+                                    Arjun Rao
+                                </h3>
+
+                                <span>
+                                    Customer Experience
+                                </span>
+
+                            </div>
+
+                            <a href="#" aria-label="Arjun Rao LinkedIn">
+
+                                <i class="fa-brands fa-linkedin-in"></i>
+
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     ABOUT US - WHAT WE BELIEVE
+====================================================== -->
+
+        <section class="about-beliefs-section">
+
+            <div class="container">
+
+                <div class="about-beliefs-intro">
+
+                    <div class="about-beliefs-label">
+
+                        <span></span>
+
+                        WHAT WE BELIEVE
+
+                    </div>
+
+                    <h2>
+                        The little things
+                        <em>matter.</em>
+                    </h2>
+
+                    <p>
+                        Everything we choose, create and deliver is
+                        guided by a few simple principles that keep
+                        Paper &amp; Palette thoughtful and useful.
+                    </p>
+
+                </div>
+
+
+                <div class="about-beliefs-list">
+
+
+                    <!-- 01 -->
+
+                    <div class="about-belief-row">
+
+                        <div class="about-belief-number">
+                            01
+                        </div>
+
+                        <div class="about-belief-title">
+
+                            <h3>
+                                Thoughtful Selection
+                            </h3>
+
+                        </div>
+
+                        <div class="about-belief-text">
+
+                            <p>
+                                We choose products for their quality,
+                                usefulness and character — not simply
+                                because they are popular.
+                            </p>
+
+                        </div>
+
+                        <div class="about-belief-icon">
+
+                            <i class="fa-regular fa-lightbulb"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 02 -->
+
+                    <div class="about-belief-row">
+
+                        <div class="about-belief-number">
+                            02
+                        </div>
+
+                        <div class="about-belief-title">
+
+                            <h3>
+                                Quality First
+                            </h3>
+
+                        </div>
+
+                        <div class="about-belief-text">
+
+                            <p>
+                                From the feel of a notebook to the
+                                smoothness of a pen, we believe good
+                                tools should be enjoyable to use.
+                            </p>
+
+                        </div>
+
+                        <div class="about-belief-icon">
+
+                            <i class="fa-regular fa-gem"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 03 -->
+
+                    <div class="about-belief-row">
+
+                        <div class="about-belief-number">
+                            03
+                        </div>
+
+                        <div class="about-belief-title">
+
+                            <h3>
+                                Creativity For Everyone
+                            </h3>
+
+                        </div>
+
+                        <div class="about-belief-text">
+
+                            <p>
+                                Creativity doesn't need to be perfect.
+                                It simply needs a place to start, and
+                                everyone deserves that starting point.
+                            </p>
+
+                        </div>
+
+                        <div class="about-belief-icon">
+
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- 04 -->
+
+                    <div class="about-belief-row">
+
+                        <div class="about-belief-number">
+                            04
+                        </div>
+
+                        <div class="about-belief-title">
+
+                            <h3>
+                                People Before Everything
+                            </h3>
+
+                        </div>
+
+                        <div class="about-belief-text">
+
+                            <p>
+                                Great products matter, but so does the
+                                experience around them. We care about
+                                making every interaction feel personal.
+                            </p>
+
+                        </div>
+
+                        <div class="about-belief-icon">
+
+                            <i class="fa-regular fa-heart"></i>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- =====================================================
+     ABOUT US - FINAL CTA
+====================================================== -->
+
+        <section class="about-final-section">
+
+            <div class="about-final-image"></div>
+
+            <div class="about-final-overlay"></div>
+
+            <div class="container">
+
+                <div class="about-final-content">
+
+                    <div class="about-final-label">
+
+                        <span></span>
+
+                        KEEP CREATING
+
+                        <span></span>
+
+                    </div>
+
+
+                    <h2>
+                        Your next idea
+                        <em>starts here.</em>
+                    </h2>
+
+
+                    <p>
+                        Discover thoughtfully selected stationery,
+                        art supplies and everyday creative essentials
+                        made for ideas of every kind.
+                    </p>
+
+
+                    <div class="about-final-actions">
+
+                        <a href="shop.html" class="about-final-primary">
+
+                            Explore Collection
+
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+
+                        <a href="contact.html" class="about-final-secondary">
+
+                            Talk To Us
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+    <!-- =====================================================
+     FOOTER
+====================================================== -->
+
+    <footer class="site-footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+
+                <!-- =========================================
+                 BRAND
+            ========================================== -->
+
+                <div class="footer-brand">
+
+                    <a href="index.html" class="footer-logo">
+
+                        <img src="images/logo-dark.png" class="logo-default" alt="Paper & Palette">
+
+                        <img src="images/logo-dark.png" class="logo-light" alt="Paper & Palette">
+
+                    </a>
+
+                    <p>
+                        Discover quality stationery, art supplies,
+                        creative essentials and school-ready bundles
+                        designed to inspire every idea.
+                    </p>
+
+
+                    <!-- Social Links -->
+
+                    <div class="footer-socials">
+
+                        <a href="#" aria-label="Facebook" title="Facebook">
+
+                            <i class="fa-brands fa-facebook-f"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Instagram" title="Instagram">
+
+                            <i class="fa-brands fa-instagram"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="Pinterest" title="Pinterest">
+
+                            <i class="fa-brands fa-pinterest-p"></i>
+
+                        </a>
+
+                        <a href="#" aria-label="YouTube" title="YouTube">
+
+                            <i class="fa-brands fa-youtube"></i>
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+
+                <!-- =========================================
+                 QUICK LINKS
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Quick Links
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="about.html">
+                                About Us
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="school-deals.html">
+                                School Deals
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="login.html">
+                                Login
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 SHOP
+            ========================================== -->
+
+                <div class="footer-column">
+
+                    <h4>
+                        Shop
+                    </h4>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="writing-supplies.html">
+                                Writing Supplies
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="notebooks-sketchbooks.html">
+                                Notebooks &amp; Sketchbooks
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="art-painting.html">
+                                Art &amp; Painting
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="craft-diy.html">
+                                Craft &amp; DIY
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="bulk-orders.html">
+                                Bulk Orders
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- =========================================
+                 CONTACT
+            ========================================== -->
+
+                <div class="footer-column footer-contact">
+
+                    <h4>
+                        Get In Touch
+                    </h4>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-location-dot"></i>
+                        </span>
+
+                        <p>
+                            24 Creative Avenue,<br>
+                            Chennai, Tamil Nadu
+                        </p>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </span>
+
+                        <a href="tel:+919876543210">
+                            +91 98765 43210
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-envelope"></i>
+                        </span>
+
+                        <a href="mailto:hello@paperandpalette.com">
+                            hello@paperandpalette.com
+                        </a>
+
+                    </div>
+
+
+                    <div class="footer-contact-item">
+
+                        <span class="footer-contact-icon">
+                            <i class="fa-regular fa-clock"></i>
+                        </span>
+
+                        <p>
+                            Mon – Sat: 9:00 AM – 7:00 PM
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <!-- =========================================
+             FOOTER BOTTOM
+        ========================================== -->
+
+            <div class="footer-bottom">
+
+                <p>
+                    © 2026 Paper &amp; Palette.
+                    All Rights Reserved.
+                </p>
+
+
+                <div class="footer-bottom-links">
+
+                    <a href="#">
+                        Privacy Policy
+                    </a>
+
+                    <span>•</span>
+
+                    <a href="#">
+                        Terms &amp; Conditions
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- Scroll To Top -->
+
+    <button class="scroll-top-btn" id="scrollTopBtn" aria-label="Scroll to top">
+
+        <i class="fa-solid fa-arrow-up"></i>
+
+    </button>
+
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
