@@ -29498,11 +29498,39 @@ body.dark-mode .school-enquiry-field select {
     color: var(--text-color) !important;
     background-color: var(--background-color) !important;
     border-color: var(--border-color) !important;
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    outline: none !important;
+    box-sizing: border-box;
+}
+
+body.dark-mode .school-enquiry-field input:hover,
+body.dark-mode .school-enquiry-field textarea:hover,
+body.dark-mode .school-enquiry-field select:hover,
+body.dark-mode .school-enquiry-field input:focus,
+body.dark-mode .school-enquiry-field textarea:focus,
+body.dark-mode .school-enquiry-field select:focus,
+body.dark-mode .school-enquiry-field input:active,
+body.dark-mode .school-enquiry-field textarea:active,
+body.dark-mode .school-enquiry-field select:active {
+    box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    outline: none !important;
+    border-color: var(--border-color) !important;
 }
 
 body.dark-mode .school-enquiry-field input::placeholder,
 body.dark-mode .school-enquiry-field textarea::placeholder {
     color: #8E9690 !important;
+}
+
+body.dark-mode .school-enquiry-field input,
+body.dark-mode .school-enquiry-field select {
+    padding: 0 16px !important;
+}
+
+body.dark-mode .school-enquiry-field textarea {
+    padding: 14px 16px !important;
 }
 
 
@@ -38185,6 +38213,25 @@ html[dir="rtl"] .site-footer .footer-bottom-links {
 
 }
 
+
+/* =========================================================
+   HOME 2 PICKED PRODUCT FOOTER OVERRIDE
+   Increase price and action text visibly across breakpoints
+========================================================= */
+
+.home-two-picked .picked-product-price strong {
+
+    font-size: 20px !important;
+
+}
+
+
+.home-two-picked .picked-product-price a {
+
+    font-size: 18px !important;
+
+}
+
 /* Remove mobile tap highlight */
 html,
 body,
@@ -38404,5 +38451,38 @@ html[dir="rtl"] .auth-toggle-btn i {
     .auth-toggle-btn i {
         font-size: 13px !important;
     }
+
+}
+
+
+/* =========================================================
+   HOME 2 PICKED PRODUCT FOOTER OVERRIDE
+   Final override: price and action text on Home 2
+========================================================= */
+
+.home-two-arrivals .arrival-bottom strong {
+
+    font-size: 18px !important;
+
+}
+
+
+.home-two-arrivals .arrival-bottom a {
+
+    font-size: 16px !important;
+
+}
+
+
+.home-two-picked .picked-product-price strong {
+
+    font-size: 20px !important;
+
+}
+
+
+.home-two-picked .picked-product-price a {
+
+    font-size: 18px !important;
 
 }
