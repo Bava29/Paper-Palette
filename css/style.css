@@ -708,7 +708,7 @@ body.dark-mode .nav-dropdown li a.active {
     display: flex;
     align-items: center;
 
-    background-color: var(--background-color);
+    background-color: var(--white-color);
 }
 
 .hero-content {
@@ -3130,7 +3130,7 @@ body.dark-mode .scroll-top-btn:hover {
 
     overflow: hidden;
 
-    background-color: var(--background-color);
+    background-color: white;
 
 }
 
@@ -3933,7 +3933,7 @@ html[dir="rtl"] .hero-circle {
 
     padding: 110px 0 120px;
 
-    background-color: var(--white-color);
+    background-color: var(--background-color);
 
 }
 
