@@ -14,8 +14,8 @@
     --primary-color: #5F7161;
     --primary-dark: #405144;
 
-    --secondary-color: #D6B98C;
-    --secondary-dark: #B59668;
+    --secondary-color: #E2C189;
+    --secondary-dark: #C49E5E;
 
     /* Neutral Colors */
     --white-color: #FFFFFF;
@@ -1088,8 +1088,8 @@ body.dark-mode {
     --primary-color: #91A594;
     --primary-dark: #7E927F;
 
-    --secondary-color: #D6B98C;
-    --secondary-dark: #BE9F70;
+    --secondary-color: #E2C189;
+    --secondary-dark: #C49E5E;
     color-scheme: dark;
 }
 
@@ -4083,7 +4083,8 @@ html[dir="rtl"] .hero-circle {
 
     position: relative;
 
-    display: block;
+    display: flex;
+    flex-direction: column;
 
     overflow: hidden;
 
@@ -4154,6 +4155,8 @@ html[dir="rtl"] .hero-circle {
 .category-content {
 
     position: relative;
+
+    margin-top: auto;
 
     z-index: 3;
 
@@ -4598,7 +4601,7 @@ html[dir="rtl"] .category-card:hover .category-link i {
 
     padding: 110px 0 120px;
 
-    background-color: var(--background-color);
+    background-color: #F7F8F6;
 
 }
 
@@ -5042,6 +5045,7 @@ html[dir="rtl"] .view-all-products:hover i {
     padding: 60px 0;
 
     background-color: var(--primary-color);
+    color: var(--white-color);
 
 }
 
@@ -5074,6 +5078,8 @@ html[dir="rtl"] .view-all-products:hover i {
     position: relative;
 
     z-index: 3;
+
+    color: var(--white-color);
 
 }
 
@@ -5154,7 +5160,7 @@ html[dir="rtl"] .view-all-products:hover i {
 
     margin: 30px 0 28px;
 
-    color: rgba(255, 255, 255, 0.72);
+    color: rgba(255, 255, 255, 0.84);
 
     font-size: 14px;
 
@@ -5243,7 +5249,7 @@ html[dir="rtl"] .view-all-products:hover i {
 
     margin-top: 20px;
 
-    color: rgba(255, 255, 255, 0.62);
+    color: rgba(255, 255, 255, 0.76);
 
     font-size: 11px;
 
@@ -5914,7 +5920,7 @@ html[dir="rtl"] .trust-point:hover>i {
 
     padding: 115px 0 120px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -7055,7 +7061,7 @@ html[dir="rtl"] .creative-inspiration-badge {
 
     padding: 115px 0 120px;
 
-    background-color: var(--background-color);
+    background-color: #F7F8F6;
 
 }
 
@@ -7476,7 +7482,7 @@ html[dir="rtl"] .customer-review-author {
 
     padding: 0 0 110px;
 
-    background-color: var(--background-color);
+    background-color: var(--white-color);
 
 }
 
@@ -8667,7 +8673,7 @@ html[dir="rtl"] .arrival-bottom a:hover i {
 
     padding: 125px 0;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -9480,7 +9486,7 @@ html[dir="rtl"] .create-item:hover .create-arrow {
 
     padding: 125px 0;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -10400,7 +10406,7 @@ html[dir="rtl"] .picked-product-price a:hover i {
 
     padding: 125px 0 135px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -13305,7 +13311,7 @@ html[dir="rtl"] .about-number-item:last-child {
 
     padding: 130px 0 140px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -13651,7 +13657,7 @@ html[dir="rtl"] .about-team-info {
 
     padding: 130px 0 140px;
 
-    background-color: var(--light-background);
+    background-color: var(--white-color);
 
 }
 
@@ -14913,7 +14919,7 @@ html[dir="rtl"] .school-needs-feature-content a:hover i {
 
     padding: 125px 0 100px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -17427,7 +17433,7 @@ html[dir="rtl"] .school-bulk-button {
 
     padding: 130px 0;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -19039,7 +19045,7 @@ html[dir="rtl"] .shop-hero-scroll {
 
 body.dark-mode .shop-featured-section {
 
-    background-color: var(--background-color);
+    background-color: #F7F8F6;
 
 }
 
@@ -19148,7 +19154,7 @@ html[dir="rtl"] .shop-product-meta a {
 
     padding: 130px 0;
 
-    background-color: var(--light-background);
+    background-color: var(--white-color);
 
 }
 
@@ -20213,7 +20219,7 @@ html[dir="rtl"] .shop-art-button {
 
     padding: 125px 0 130px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -21060,7 +21066,7 @@ html[dir="rtl"] .contact-info-heading {
 
     padding: 105px 0 110px;
 
-    background-color: var(--light-background);
+    background-color: #F7F8F6;
 
 }
 
@@ -21881,7 +21887,7 @@ html[dir="rtl"] .contact-location-button i {
 
     min-height: 100vh;
 
-    background-color: var(--light-background);
+    background-color: var(--white-color);
 
     color: var(--text-color);
 
@@ -38696,4 +38702,383 @@ html[dir="rtl"] .auth-toggle-btn i {
         justify-content: flex-start !important;
         text-align: left !important;
     }
+}
+
+/* =========================================================
+   HERO SECONDARY BUTTONS - HOME 1 & HOME 2
+   Strong Override
+========================================================= */
+
+/* HOME 1 */
+
+.hero-editorial .hero-actions .hero-text-link {
+
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 12px 22px !important;
+
+    color: var(--text-color) !important;
+
+    background-color: transparent !important;
+
+    border: 1px solid var(--text-color) !important;
+
+    border-radius: var(--radius-sm) !important;
+
+    font-family: var(--body-font);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    transition: var(--transition);
+
+}
+
+
+/* HOME 1 Hover */
+
+.hero-editorial .hero-actions .hero-text-link:hover {
+
+    color: var(--white-color) !important;
+
+    background-color: var(--primary-color) !important;
+
+    border-color: var(--primary-color) !important;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* HOME 2 */
+
+.home-two-hero .home-two-hero-secondary {
+
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 12px 22px !important;
+
+    color: var(--text-color) !important;
+
+    background-color: transparent !important;
+
+    border: 1px solid var(--text-color) !important;
+
+    border-radius: var(--radius-sm) !important;
+
+    font-family: var(--body-font);
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    text-decoration: none !important;
+
+    transition: var(--transition);
+
+}
+
+
+/* HOME 2 Hover */
+
+.home-two-hero .home-two-hero-secondary:hover {
+
+    color: var(--white-color) !important;
+
+    background-color: var(--primary-color) !important;
+
+    border-color: var(--primary-color) !important;
+
+    transform: translateY(-2px);
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .hero-editorial .hero-actions .hero-text-link {
+
+    color: #F4F4EF !important;
+
+    background-color: transparent !important;
+
+    border-color: rgba(244, 244, 239, 0.65) !important;
+
+}
+
+body.dark-mode .hero-editorial .hero-actions .hero-text-link:hover {
+
+    color: #263029 !important;
+
+    background-color: var(--secondary-color) !important;
+
+    border-color: var(--secondary-color) !important;
+
+}
+
+
+body.dark-mode .home-two-hero .home-two-hero-secondary {
+
+    color: #F4F4EF !important;
+
+    background-color: transparent !important;
+
+    border-color: rgba(244, 244, 239, 0.65) !important;
+
+}
+
+body.dark-mode .home-two-hero .home-two-hero-secondary:hover {
+
+    color: #263029 !important;
+
+    background-color: var(--secondary-color) !important;
+
+    border-color: var(--secondary-color) !important;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .hero-editorial .hero-actions .hero-text-link,
+    .home-two-hero .home-two-hero-secondary {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}
+
+/* =========================================================
+   HOME 2 HERO - SECONDARY BUTTON
+   FINAL LIGHT + DARK MODE VISIBILITY FIX
+========================================================= */
+
+.home-two-hero .home-two-hero-actions .home-two-hero-secondary {
+
+    display: inline-flex !important;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 48px;
+
+    padding: 12px 22px !important;
+
+    color: #FFFFFF !important;
+
+    background-color: transparent !important;
+
+    border: 1px solid rgba(255, 255, 255, 0.85) !important;
+
+    border-radius: 6px !important;
+
+    font-family: var(--body-font) !important;
+
+    font-size: 13px !important;
+
+    font-weight: 700 !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    text-decoration: none !important;
+
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    transition: all 0.3s ease !important;
+
+}
+
+
+/* Text + Icon */
+
+.home-two-hero .home-two-hero-actions .home-two-hero-secondary,
+.home-two-hero .home-two-hero-actions .home-two-hero-secondary i {
+
+    color: #FFFFFF !important;
+
+    -webkit-text-fill-color: #FFFFFF !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+}
+
+
+/* Hover */
+
+.home-two-hero .home-two-hero-actions .home-two-hero-secondary:hover {
+
+    color: #263029 !important;
+
+    background-color: var(--secondary-color) !important;
+
+    border-color: var(--secondary-color) !important;
+
+    -webkit-text-fill-color: #263029 !important;
+
+    transform: translateY(-3px);
+
+}
+
+
+.home-two-hero .home-two-hero-actions .home-two-hero-secondary:hover i {
+
+    color: #263029 !important;
+
+    -webkit-text-fill-color: #263029 !important;
+
+}
+
+
+/* =========================================================
+   DARK MODE
+========================================================= */
+
+body.dark-mode .home-two-hero .home-two-hero-actions .home-two-hero-secondary {
+
+    color: #F5F1E8 !important;
+
+    background-color: transparent !important;
+
+    border-color: rgba(245, 241, 232, 0.85) !important;
+
+    -webkit-text-fill-color: #F5F1E8 !important;
+
+}
+
+
+body.dark-mode .home-two-hero .home-two-hero-actions .home-two-hero-secondary i {
+
+    color: #F5F1E8 !important;
+
+    -webkit-text-fill-color: #F5F1E8 !important;
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .home-two-hero .home-two-hero-actions .home-two-hero-secondary {
+
+        width: 100%;
+
+        max-width: 280px;
+
+    }
+
+}
+
+/* Home 2 - Center Text Without Changing Button Size */
+
+.home-two-hero .home-two-hero-secondary {
+
+    position: relative !important;
+
+    text-align: center !important;
+
+}
+
+/* Center the text only */
+
+.home-two-hero .home-two-hero-secondary {
+
+    justify-content: center !important;
+
+}
+
+/* Keep arrow from affecting text centering */
+
+.home-two-hero .home-two-hero-secondary i {
+
+    position: absolute !important;
+
+    right: 22px;
+
+    top: 50%;
+
+    transform: translateY(-50%);
+
+}
+
+/* =========================================================
+   ABOUT US - REMOVE EXTRA SPACE ABOVE OUR NUMBERS
+   Strong Override
+========================================================= */
+
+.about-journey-section {
+
+    padding-bottom: 90px !important;
+
+}
+
+.about-numbers-section {
+
+    padding-top: 90px !important;
+
+}
+
+@media (max-width: 575px) {
+
+    .school-enquiry-submit {
+        width: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+        align-items: stretch !important;
+        gap: 10px !important;
+    }
+
+    .school-enquiry-submit button {
+        width: 100% !important;
+        min-width: 0 !important;
+        max-width: 100% !important;
+        order: 1 !important;
+    }
+
+    .school-enquiry-submit>span {
+        display: block !important;
+        width: 100% !important;
+        max-width: 100% !important;
+        order: 2 !important;
+
+        text-align: center !important;
+        white-space: normal !important;
+        line-height: 1.5 !important;
+        font-size: 10px !important;
+    }
+
 }
